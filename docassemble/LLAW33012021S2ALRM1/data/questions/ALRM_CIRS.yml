@@ -1,0 +1,7 @@
+mandatory: True
+question: ALRM Civil Internal Referall System
+subquestion: |
+  Skeleton file for the ALRM CIRS
+button:
+  - Exit: exit
+ 
