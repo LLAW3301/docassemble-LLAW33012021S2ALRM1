@@ -45,7 +45,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.LLAW33012021S2ALRM1',
       version='',
       description=(''),
-      long_description='# docassemble.LLAW33012021S2ALRM1\n\n\n\n## Author\n\nBrayden Tansell, tans0013@flinders.edu.au\n\n',
+      long_description='# docassemble.LLAW33012021S2ALRM1\r\n\r\n\r\n\r\n## Author\r\n\r\nBrayden Tansell, tans0013@flinders.edu.au\r\n\r\n',
       long_description_content_type='text/markdown',
       author='Brayden Tansell',
       author_email='tans0013@flinders.edu.au',

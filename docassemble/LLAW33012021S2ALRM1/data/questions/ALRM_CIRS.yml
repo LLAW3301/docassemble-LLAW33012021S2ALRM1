@@ -1,7 +1,46 @@
+---
 mandatory: True
 question: ALRM Civil Internal Referall System
 subquestion: |
-  Skeleton file for the ALRM CIRS
-button:
+  ###Your entered data
+  
+  Information|Input
+  -----------|----------
+  Your name             |  ${ ALRMempName }
+  Your role             |  ${ ALRMempRole }
+  Client age            |  ${ ALRMcliAge }
+  Client Gender         |  ${ ALRMcliGender }
+  Region                |  ${ ALRMcliRegion }
+buttons:
   - Exit: exit
- 
+  - Restart: restart
+---
+question: Employee Details
+fields:
+  - Employee Name: ALRMempName
+  - Employee Role: ALRMempRole
+    datatype: radio
+    choices:
+      - FSP
+      - Solicitor
+      - Law Clerk
+---
+question: Client Details
+fields:
+  - Client Age: ALRMcliAge
+    choices:
+    - 12-17
+    - 18-25
+    - 26-50
+    - 50+
+  - Client Gender: ALRMcliGender
+    datatype: radio
+    choices:
+    - Male
+    - Female
+  - Region: ALRMcliRegion
+    choices:
+    - Metropolitan
+    - Regional
+    - Remote
+---
