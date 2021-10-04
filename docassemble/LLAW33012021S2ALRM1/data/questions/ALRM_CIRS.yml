@@ -18,6 +18,18 @@ subquestion: |
   %else:
     Region                |  Remote
   %endif
+  Family Violence         |  ${ ALRMpisrChoices['ALRMfmlyViolent'] }
+  Mental Health           |  ${ ALRMpisrChoices['ALRMmentHealth'] }
+  Drug & Alcohol          |  ${ ALRMpisrChoices['ALRMsubstance'] }
+  Homelessness            |  ${ ALRMpisrChoices['ALRMhomeless'] }
+  Financial               |  ${ ALRMpisrChoices['ALRMfinance'] }
+  Disability (Intellectual)  |  ${ ALRMpisrChoices['ALRMdisIntellect'] }
+  Disability (Physical)   |  ${ ALRMpisrChoices['ALRMdisPhysical'] }
+  Medical Health          |  ${ ALRMpisrChoices['ALRMmedical'] }
+  Family Law              |  ${ ALRMliChoices['ALRMfmlyLaw'] }
+  Child Protection        |  ${ ALRMliChoices['ALRMchldProtect'] }
+  Personal Injury         |  ${ ALRMliChoices['ALRMinjury'] }
+  SACAT                   |  ${ ALRMliChoices['ALRMsacat'] }
 buttons:
   - Exit: exit
   - Restart: restart
@@ -74,4 +86,28 @@ buttons:
         - APY Lands
         - Iron Triangle
         - Interstate
+---
+question: Presenting Issues/Support Request
+fields:
+  - "Select all that apply": ALRMpisrChoices
+    datatype: checkboxes
+    choices:
+      - Family Violence: ALRMfmlyViolent
+      - Mental Health: ALRMmentHealth
+      - Drug & Alcohol: ALRMsubstance
+      - Homelessness: ALRMhomeless
+      - Financial: ALRMfinance
+      - Disability (Intellectual): ALRMdisIntellect
+      - Disability (Physical): ALRMdisPhysical
+      - Medical Health: ALRMmedical
+---
+question: Legal Issues
+fields:
+  - "Select all that apply": ALRMliChoices
+    datatype: checkboxes
+    choices:
+      - Family Law: ALRMfmlyLaw
+      - Child Protection: ALRMchldProtect
+      - Personaly Injruy: ALRMinjury
+      - SACAT: ALRMsacat
 ---
