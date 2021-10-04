@@ -10,7 +10,14 @@ subquestion: |
   Your role             |  ${ ALRMempRole }
   Client age            |  ${ ALRMcliAge }
   Client Gender         |  ${ ALRMcliGender }
-  Region                |  ${ ALRMcliRegion }
+  Location              |  ${ ALRMcliLocate }
+  %if ALRMcliLocate == 'Northern Suburbs' or ALRMcliLocate == 'Eastern Suburbs' or ALRMcliLocate == 'Southern Suburbs' or ALRMcliLocate == 'Western Suburbs':
+    Region                |  Metropolitan
+  %elif ALRMcliLocate == 'Berri' or ALRMcliLocate == 'Ceduna' or ALRMcliLocate == 'Murray Bridge' or ALRMcliLocate == 'Mount Gambier' or ALRMcliLocate == 'Port Augusta' or ALRMcliLocate == 'Port Lincoln' or ALRMcliLocate == 'Port Pirie':
+    Region                |  Regional
+  %else:
+    Region                |  Remote
+  %endif
 buttons:
   - Exit: exit
   - Restart: restart
@@ -38,9 +45,33 @@ fields:
     choices:
     - Male
     - Female
-  - Region: ALRMcliRegion
-    choices:
-    - Metropolitan
-    - Regional
-    - Remote
+---
+question: Client Region
+buttons:
+  - Metropolitan:
+      question: Client Location
+      field: ALRMcliLocate
+      buttons:
+        - Northern Suburbs
+        - Eastern Suburbs
+        - Southern Suburbs
+        - Western Suburbs
+  - Regional:
+      question: Client Location
+      field: ALRMcliLocate
+      buttons:
+        - Berri
+        - Ceduna
+        - Murray Bridge
+        - Mount Gambier
+        - Port Augusta
+        - Port Lincoln
+        - Port Pirie
+  - Remote:
+      question: Client Location
+      field: ALRMcliLocate
+      buttons:
+        - APY Lands
+        - Iron Triangle
+        - Interstate
 ---
