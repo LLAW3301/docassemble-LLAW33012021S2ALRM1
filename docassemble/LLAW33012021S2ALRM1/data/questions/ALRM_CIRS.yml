@@ -1,6 +1,6 @@
 ---
 mandatory: True
-question: ALRM Civil Internal Referall System
+question: ALRM Civil Service Directory
 subquestion: |
   ###Your entered data
   
@@ -12,24 +12,24 @@ subquestion: |
   Client Gender         |  ${ ALRMcliGender }
   Location              |  ${ ALRMcliLocate }
   %if ALRMcliLocate == 'Northern Suburbs' or ALRMcliLocate == 'Eastern Suburbs' or ALRMcliLocate == 'Southern Suburbs' or ALRMcliLocate == 'Western Suburbs':
-    Region                |  Metropolitan
+    Region              |  Metropolitan
   %elif ALRMcliLocate == 'Berri' or ALRMcliLocate == 'Ceduna' or ALRMcliLocate == 'Murray Bridge' or ALRMcliLocate == 'Mount Gambier' or ALRMcliLocate == 'Port Augusta' or ALRMcliLocate == 'Port Lincoln' or ALRMcliLocate == 'Port Pirie':
-    Region                |  Regional
+    Region              |  Regional
   %else:
-    Region                |  Remote
+    Region              |  Remote
   %endif
-  Family Violence         |  ${ ALRMpisrChoices['ALRMfmlyViolent'] }
-  Mental Health           |  ${ ALRMpisrChoices['ALRMmentHealth'] }
-  Drug & Alcohol          |  ${ ALRMpisrChoices['ALRMsubstance'] }
-  Homelessness            |  ${ ALRMpisrChoices['ALRMhomeless'] }
-  Financial               |  ${ ALRMpisrChoices['ALRMfinance'] }
+  Family Violence       |  ${ ALRMpisrChoices['ALRMfmlyViolent'] }
+  Mental Health         |  ${ ALRMpisrChoices['ALRMmentHealth'] }
+  Drug & Alcohol        |  ${ ALRMpisrChoices['ALRMsubstance'] }
+  Homelessness          |  ${ ALRMpisrChoices['ALRMhomeless'] }
+  Financial             |  ${ ALRMpisrChoices['ALRMfinance'] }
   Disability (Intellectual)  |  ${ ALRMpisrChoices['ALRMdisIntellect'] }
-  Disability (Physical)   |  ${ ALRMpisrChoices['ALRMdisPhysical'] }
-  Medical Health          |  ${ ALRMpisrChoices['ALRMmedical'] }
-  Family Law              |  ${ ALRMliChoices['ALRMfmlyLaw'] }
-  Child Protection        |  ${ ALRMliChoices['ALRMchldProtect'] }
-  Personal Injury         |  ${ ALRMliChoices['ALRMinjury'] }
-  SACAT                   |  ${ ALRMliChoices['ALRMsacat'] }
+  Disability (Physical) |  ${ ALRMpisrChoices['ALRMdisPhysical'] }
+  Medical Health        |  ${ ALRMpisrChoices['ALRMmedical'] }
+  Family Law            |  ${ ALRMliChoices['ALRMfmlyLaw'] }
+  Child Protection      |  ${ ALRMliChoices['ALRMchldProtect'] }
+  Personal Injury       |  ${ ALRMliChoices['ALRMinjury'] }
+  SACAT                 |  ${ ALRMliChoices['ALRMsacat'] }
 buttons:
   - Exit: exit
   - Restart: restart
