@@ -1,0 +1,1212 @@
+---
+  #  Declaring dictionary lists for service sorting and variables to determine
+  #  client region as well as generate final output.
+
+objects:
+  - ALRMlistGenderSorted: DAList
+  - ALRMlistAgeSorted: DAList
+  - ALRMlistRegionSorted: DAList
+  - ALRMlistLocateSorted: DAList
+  - ALRMlistKeytermSorted: DAList
+  - ALRMlistDisplay: DAList
+  - ALRMcliRegion: 
+  - ALRMmdText:
+---
+  #  The original dictionary list in which all services are stored. At the current
+  #  time this makes the programs code less readable, it would be better if this
+  #  could be stored in a seperate file and referred to as needed.
+
+variable name: ALRMlistServices
+use objects: True
+data:
+    
+  #  Below is the template for the services list. Example values are 
+  #  provided within, inconsistency with their formats will prevent 
+  #  that service from being recommended. X applies to all choices in 
+  #  entry (location contextual to region).
+
+#  - Organisation: The name of the Organisation providing the service.
+#    Service: Descriptive name for the service(s) provided.
+#    Age: 12-17, 18-25, 26-50, 50+, X
+#    Gender: Male, Female, X
+#    Region: Metropolitan, Regional, Remote
+#    Location: (Region = Metropolitan: Northern Suburbs, Eastern Suburbs, Southern Suburbs, Western Suburbs) (Region = Regional: Berri, Ceduna, Murray Brridge, Mount Gambier, Port Augusta, Port Lincoln, Port Pirie) (Region = Remote: APY Lands, Iron Triangle, Interstate) or X
+#    Keyterm: Family Violence, Mental Health, Drug & Alcohol, Homelessness, Financial, Disability (Intellectual), Disability (Physical), Medical Health, Family Law, Child Protection, Personal Injury, SACAT
+#    Website: URL or NA
+#    Phone: (Landline: (XX) XXXX XXXX, Mobile: XXXX XXX XXX, None: NA)
+#    Email: Email Address or NA
+#    Address: Street Address (as listed by service provider) or NA
+#    ###########
+
+  #  A blank copy provided for your convenience. Remove leading 
+  #  '#' but do not remove the entire bottom row.
+
+#  - Organisation: 
+#    Service: 
+#    Age: 
+#    Gender: 
+#    Region: 
+#    Location: 
+#    Keyterm: 
+#    Website: 
+#    Phone: 
+#    Email: 
+#    Address: 
+#    ###########
+
+
+  - Organisation: Aboriginal Sobriety Group
+    Service: Lakalinjeri Tumbetin Waal (24/7 Live-In Rehabilitation Service)
+    Age: X
+    Gender: Male
+    Region: Regional
+    Location: Murray Bridge
+    Keyterm: Drug & Alcohol
+    Website: https://asg.org.au/stabilisation-rehabilitation/
+    Phone: (08) 8223 4204
+    Email: referrals@asg.org.au
+    Address: NA
+    ###########
+  - Organisation: Aboriginal Sobriety Group
+    Service: Leila Rankine (24/7 Live-In Rehabilitation Service)
+    Age: X
+    Gender: Female
+    Region: Regional
+    Location: Murray Bridge
+    Keyterm: Drug & Alcohol
+    Website: https://asg.org.au/stabilisation-rehabilitation/
+    Phone: (08) 8223 4204
+    Email: referrals@asg.org.au
+    Address: NA
+    ###########
+  - Organisation: Aboriginal Sobriety Group
+    Service: Substance Misuse And Social Emotional Wellbeing Services
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Berri
+    Keyterm: Drug & Alcohol
+    Website: https://asg.org.au/northern-metro-riverland-outreach/
+    Phone: (08) 8580 8700
+    Email: referrals@asg.org.au
+    Address: NA
+    ###########
+  - Organisation: Aboriginal Sobriety Group
+    Service: Drug & Alcohol, Welfare & Justice System Support (Aboriginal Prisoners)
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Berri
+    Keyterm: Drug & Alcohol
+    Website: https://asg.org.au/northern-metro-riverland-outreach/
+    Phone: (08) 8580 8700
+    Email: referrals@asg.org.au
+    Address: NA
+    ###########
+  - Organisation: Aboriginal Sobriety Group
+    Service: Mobile Assistance Patrol (Map) Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Drug & Alcohol
+    Website: https://asg.org.au/mobile-assistance-patrol-map/
+    Phone: 0411 474 368
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Aboriginal Sobriety Group
+    Service: WAASHS Homelessness Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Western Suburbs
+    Keyterm: Homelessness
+    Website: https://asg.org.au/homelessness/
+    Phone: (08) 8243 1698
+    Email: reception@asg.org.au
+    Address: NA
+    ###########
+  - Organisation: Aboriginal Community Connect
+    Service: Community Residential Rehabilitation Program Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Drug & Alcohol
+    Website: https://www.unitingcommunities.org/service/aboriginal-services/aboriginal-community-connect
+    Phone: (08) 8202 5660
+    Email: NA
+    Address: 196 Prospect Road, Prospect SA 5082
+    ###########
+  - Organisation: Aboriginal Community Connect
+    Service: Community Residential Rehabilitation Program Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Mount Gambier
+    Keyterm: Drug & Alcohol
+    Website: https://www.unitingcommunities.org/service/aboriginal-services/aboriginal-community-connect
+    Phone: (08) 8202 5672
+    Email: NA
+    Address: 11 Wehl Street, Mt Gambier SA 5290
+    ###########
+  - Organisation: Aboriginal Community Connect
+    Service: Community Residential Rehabilitation Program Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Berri
+    Keyterm: Drug & Alcohol
+    Website: https://www.unitingcommunities.org/service/aboriginal-services/aboriginal-community-connect
+    Phone: (08) 8568 6362
+    Email: NA
+    Address: 5 William Street, Berri SA 5343
+    ###########
+  - Organisation: Aboriginal Community Connect
+    Service: Community Residential Rehabilitation Program Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Murray Bridge
+    Keyterm: Drug & Alcohol
+    Website: https://www.unitingcommunities.org/service/aboriginal-services/aboriginal-community-connect
+    Phone: 0428 956 943
+    Email: NA
+    Address: 35 Bridge St, Murray Bridge SA 5253 (MADEC Australia)
+    ###########
+  - Organisation: Relationships Australia
+    Service: Children & Parenting Support, Family Support Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8223 4566
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Relationships Australia
+    Service: Family Mental Health Support, Counselling Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Mental Health
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8223 4566
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Relationships Australia
+    Service: Gambling Support
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Financial
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8223 4566
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Relationships Australia
+    Service: Children & Parenting Support, Family Support Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Western Suburbs
+    Keyterm: Family Violence
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8245 8100
+    Email: NA
+    Address: 49A Orsmond Street, Hindmarsh SA 5007
+    ###########
+  - Organisation: Relationships Australia
+    Service: Family Mental Health Support, Counselling Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Western Suburbs
+    Keyterm: Mental Health
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8245 8100
+    Email: NA
+    Address: 49A Orsmond Street, Hindmarsh SA 5007
+    ###########
+  - Organisation: Relationships Australia
+    Service: Gambling Support
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Western Suburbs
+    Keyterm: Financial
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8245 8100
+    Email: NA
+    Address: 49A Orsmond Street, Hindmarsh SA 5007
+    ###########
+  - Organisation: Relationships Australia
+    Service: Children & Parenting Support, Family Support Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Western Suburbs
+    Keyterm: Family Violence
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8340 2022
+    Email: NA
+    Address: 8 Butler Street, Port Adelaide SA 5015
+    ###########
+  - Organisation: Relationships Australia
+    Service: Family Mental Health Support, Counselling Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Western Suburbs
+    Keyterm: Mental Health
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8340 2022
+    Email: NA
+    Address: 8 Butler Street, Port Adelaide SA 5015
+    ###########
+  - Organisation: Relationships Australia
+    Service: Gambling Support
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Western Suburbs
+    Keyterm: Financial
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8340 2022
+    Email: NA
+    Address: 8 Butler Street, Port Adelaide SA 5015
+    ###########
+  - Organisation: Relationships Australia
+    Service: Children & Parenting Support, Family Support Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Southern Suburbs
+    Keyterm: Family Violence
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8377 5400
+    Email: NA
+    Address: 297 Diagonal Road, Oaklands Park SA 5046
+    ###########
+  - Organisation: Relationships Australia
+    Service: Family Mental Health Support, Counselling Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Southern Suburbs
+    Keyterm: Mental Health
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8377 5400
+    Email: NA
+    Address: 297 Diagonal Road, Oaklands Park SA 5046
+    ###########
+  - Organisation: Relationships Australia
+    Service: Gambling Support
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Southern Suburbs
+    Keyterm: Financial
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8377 5400
+    Email: NA
+    Address: 297 Diagonal Road, Oaklands Park SA 5046
+    ###########
+  - Organisation: Relationships Australia
+    Service: Children & Parenting Support, Family Support Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Family Violence
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8255 3323
+    Email: NA
+    Address: 13 Elizabeth Way, Elizabeth SA 5112
+    ###########
+  - Organisation: Relationships Australia
+    Service: Family Mental Health Support, Counselling Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Mental Health
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8255 3323
+    Email: NA
+    Address: 13 Elizabeth Way, Elizabeth SA 5112
+    ###########
+  - Organisation: Relationships Australia
+    Service: Gambling Support
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Financial
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8255 3323
+    Email: NA
+    Address: 13 Elizabeth Way, Elizabeth SA 5112
+    ###########
+  - Organisation: Relationships Australia
+    Service: Children & Parenting Support, Family Support Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Family Violence
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8250 6600
+    Email: NA
+    Address: 2 Roder Ct, St Agnes SA 5097
+    ###########
+  - Organisation: Relationships Australia
+    Service: Family Mental Health Support, Counselling Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Mental Health
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8250 6600
+    Email: NA
+    Address: 2 Roder Ct, St Agnes SA 5097
+    ###########
+  - Organisation: Relationships Australia
+    Service: Gambling Support
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Financial
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8250 6600
+    Email: NA
+    Address: 2 Roder Ct, St Agnes SA 5097
+    ###########
+  - Organisation: Relationships Australia
+    Service: Children & Parenting Support, Family Support Services
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Berri
+    Keyterm: Family Violence
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8582 4122
+    Email: NA
+    Address: 9 Kay Avenue, Berri SA 5343
+    ###########
+  - Organisation: Relationships Australia
+    Service: Family Mental Health Support, Counselling Services
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Berri
+    Keyterm: Mental Health
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8582 4122
+    Email: NA
+    Address: 9 Kay Avenue, Berri SA 5343
+    ###########
+  - Organisation: Relationships Australia
+    Service: Gambling Support
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Berri
+    Keyterm: Financial
+    Website: https://www.rasa.org.au/services/post-separation/support-services/
+    Phone: (08) 8582 4122
+    Email: NA
+    Address: 9 Kay Avenue, Berri SA 5343
+    ###########
+  - Organisation: Centacare
+    Service: Homelessness
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Homelessness
+    Website: https://www.centacare.org.au/services/ , https://www.centacare.org.au/where-we-are/
+    Phone: (08) 8215 6700
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Centacare
+    Service: Disability
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Disability (Intellectual)
+    Website: https://www.centacare.org.au/services/ , https://www.centacare.org.au/where-we-are/
+    Phone: (08) 8215 6700
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Centacare
+    Service: Disability
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Disability (Physical)
+    Website: https://www.centacare.org.au/services/ , https://www.centacare.org.au/where-we-are/
+    Phone: (08) 8215 6700
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Centacare
+    Service: Family, Youth and Children
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.centacare.org.au/services/ , https://www.centacare.org.au/where-we-are/
+    Phone: (08) 8215 6700
+    Email: fdr@centacare.org.au
+    Address: NA
+    ###########
+  - Organisation: Centacare
+    Service: Homelessness
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Homelessness
+    Website: https://www.centacare.org.au/services/ , https://www.centacare.org.au/where-we-are/
+    Phone: (08) 8215 6700
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Centacare
+    Service: Disability
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Disability (Intellectual)
+    Website: https://www.centacare.org.au/services/ , https://www.centacare.org.au/where-we-are/
+    Phone: (08) 8215 6700
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Centacare
+    Service: Disability
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Disability (Physical)
+    Website: https://www.centacare.org.au/services/ , https://www.centacare.org.au/where-we-are/
+    Phone: (08) 8215 6700
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Centacare
+    Service: Family, Youth and Children
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.centacare.org.au/services/ , https://www.centacare.org.au/where-we-are/
+    Phone: (08) 8215 6700
+    Email: fdr@centacare.org.au
+    Address: NA
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Muna Paiendi (Medical Health Services)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Medical Health
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 8182 9206
+    Email: NA
+    Address: Corner of Mark Road and Oldham Road, Elizabeth Vale, SA 5112
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Muna Paiendi (Wellbeing Support, Counselling, Case Management)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Mental Health
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 8182 9206
+    Email: NA
+    Address: Corner of Mark Road and Oldham Road, Elizabeth Vale, SA 5112
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Muna Paiendi (Allied Health Services)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Disability (Intellectual)
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 8182 9206
+    Email: NA
+    Address: Corner of Mark Road and Oldham Road, Elizabeth Vale, SA 5112
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Muna Paiendi (Health Promotion, Care Planning)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Disability (Physical)
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 8182 9206
+    Email: NA
+    Address: Corner of Mark Road and Oldham Road, Elizabeth Vale, SA 5112
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Kanggawodil (Medical Health Services)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Medical Health
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 8342 2250
+    Email: NA
+    Address: 16-22 Clements Street, Dudley Park, SA 5008
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Kanggawodil (Wellbeing Support, Counselling, Case Management)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Mental Health
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 8342 2250
+    Email: NA
+    Address: 16-22 Clements Street, Dudley Park, SA 5008
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Kanggawodil (Allied Health Services)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Disability (Intellectual)
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 8342 2250
+    Email: NA
+    Address: 16-22 Clements Street, Dudley Park, SA 5008
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Kanggawodil (Health Promotion, Care Planning)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Disability (Physical)
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 8342 2250
+    Email: NA
+    Address: 16-22 Clements Street, Dudley Park, SA 5008
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Maringga Turtpandi (Medical Health Services)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Medical Health
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 7425 8900
+    Email: NA
+    Address: C/o Gilles Plains GP Plus Super Clinic, 1 Gilles Crescent, Hillcrest, SA 5086
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Maringga Turtpandi (Wellbeing Support, Counselling, Case Management)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Mental Health
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 7425 8900
+    Email: NA
+    Address: C/o Gilles Plains GP Plus Super Clinic, 1 Gilles Crescent, Hillcrest, SA 5086
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Maringga Turtpandi (Allied Health Services)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Disability (Intellectual)
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 7425 8900
+    Email: NA
+    Address: C/o Gilles Plains GP Plus Super Clinic, 1 Gilles Crescent, Hillcrest, SA 5086
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Maringga Turtpandi (Health Promotion, Care Planning)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Disability (Physical)
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 7425 8900
+    Email: NA
+    Address: C/o Gilles Plains GP Plus Super Clinic, 1 Gilles Crescent, Hillcrest, SA 5086
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Wonggangga Turtpandi (Medical Health Services)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Medical Health
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 8240 9611
+    Email: NA
+    Address: 11 Church Street, Port Adelaide, SA 5015
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Wonggangga Turtpandi (Wellbeing Support, Counselling, Case Management)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Mental Health
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 8240 9611
+    Email: NA
+    Address: 11 Church Street, Port Adelaide, SA 5015
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Wonggangga Turtpandi (Allied Health Services)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Disability (Intellectual)
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 8240 9611
+    Email: NA
+    Address: 11 Church Street, Port Adelaide, SA 5015
+    ###########
+  - Organisation: Australian Government Health Services - Watto Purrunna 
+    Service: Wonggangga Turtpandi (Health Promotion, Care Planning)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Disability (Physical)
+    Website: https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/services/health+services+for/aboriginal+health+services/watto+purrunna+aboriginal+primary+health+care+service
+    Phone: (08) 8240 9611
+    Email: NA
+    Address: 11 Church Street, Port Adelaide, SA 5015
+    ###########
+  - Organisation: Uniting Care Wesley
+    Service: Mental Health
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Mental Health
+    Website: https://ucwb.org.au/
+    Phone: (08) 8245 7100
+    Email: ucwb@ucwb.org.au
+    Address: 77 Gibson St, Bowden SA 5007
+    ###########
+  - Organisation: Uniting Care Wesley
+    Service: Financial Health
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Financial
+    Website: https://ucwb.org.au/
+    Phone: (08) 8245 7100
+    Email: ucwb@ucwb.org.au
+    Address: 77 Gibson St, Bowden SA 5007
+    ###########
+  - Organisation: Uniting Care Wesley
+    Service: Homelessness
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Homelessness
+    Website: https://ucwb.org.au/
+    Phone: (08) 8245 7100
+    Email: ucwb@ucwb.org.au
+    Address: 77 Gibson St, Bowden SA 5007
+    ###########
+  - Organisation: Uniting Care Wesley
+    Service: Mental Health Carer Support, NDIS
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Disability (Intellectual)
+    Website: https://ucwb.org.au/
+    Phone: (08) 8245 7100
+    Email: ucwb@ucwb.org.au
+    Address: 77 Gibson St, Bowden SA 5007
+    ###########
+  - Organisation: Uniting Care Wesley
+    Service: Aged Care, NDIS
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Disability (Physical)
+    Website: https://ucwb.org.au/
+    Phone: (08) 8245 7100
+    Email: ucwb@ucwb.org.au
+    Address: 77 Gibson St, Bowden SA 5007
+    ###########
+  - Organisation: Lutheran Community Care
+    Service: Counselling
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Mental Health
+    Website: https://www.lccare.org.au/find-help/personal-counselling/
+    Phone: (08) 8269 9300
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Lutheran Community Care
+    Service: Family Counselling
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Family Violence
+    Website: https://www.lccare.org.au/find-help/personal-counselling/
+    Phone: (08) 8269 9300
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Lutheran Community Care
+    Service: Counselling
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Murray Bridge
+    Keyterm: Mental Health
+    Website: https://www.lccare.org.au/find-help/personal-counselling/
+    Phone: 0490 660 158
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Lutheran Community Care
+    Service: Family Counselling
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Murray Bridge
+    Keyterm: Family Violence
+    Website: https://www.lccare.org.au/find-help/personal-counselling/
+    Phone: 0490 660 158
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Lutheran Community Care
+    Service: Counselling
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Mental Health
+    Website: https://www.lccare.org.au/find-help/personal-counselling/
+    Phone: (08) 8562 2688
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Lutheran Community Care
+    Service: Family Counselling
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.lccare.org.au/find-help/personal-counselling/
+    Phone: (08) 8562 2688
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Lutheran Community Care
+    Service: Foster Care Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.lccare.org.au/foster-care/
+    Phone: (08) 8337 8787
+    Email: fostercare@lccare.org.au
+    Address: NA
+    ###########
+  - Organisation: Lutheran Community Care
+    Service: Foster Care Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.lccare.org.au/foster-care/
+    Phone: (08) 8337 8787
+    Email: fostercare@lccare.org.au
+    Address: NA
+    ###########
+  - Organisation: Lutheran Community Care
+    Service: Clinical Supervision Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Medical Health
+    Website: https://www.lccare.org.au/find-help/clinical-supervision/
+    Phone: (08) 8269 9300
+    Email: NA
+    Address: 309 Prospect Road, Blair Athol SA 5084
+    ###########
+  - Organisation: Lutheran Community Care
+    Service: Clinical Supervision Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Mental Health
+    Website: https://www.lccare.org.au/find-help/clinical-supervision/
+    Phone: (08) 8269 9300
+    Email: NA
+    Address: 309 Prospect Road, Blair Athol SA 5084
+    ###########
+  - Organisation: Lutheran Community Care
+    Service: Emergency Material Relief Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Financial
+    Website: https://www.lccare.org.au/find-help/financial-hurdles/emergency-relief/
+    Phone: (08) 8269 9300
+    Email: blairathol@lccare.org.au
+    Address: 309 Prospect Road, Blair Athol SA 5084
+    ###########
+  - Organisation: Lutheran Community Care
+    Service: Emergency Material Relief Service (Appointment Only)
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Financial
+    Website: https://www.lccare.org.au/find-help/financial-hurdles/emergency-relief/
+    Phone: (08) 8562 2688
+    Email: barossa@lccare.org.au
+    Address: 26 Second Street, Nuriootpa SA 5355
+    ###########
+  - Organisation: Salvation Army
+    Service: Emergency Relief, Financial Counselling and Budget Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Financial
+    Website: https://www.salvationarmy.org.au/adelaidecity/what-we-do/community-care/
+    Phone: (08) 8227 0199
+    Email: adminach@salvationarmy.org.au
+    Address: 277 Pirie St, Adelaide SA 5000
+    ###########
+  - Organisation: Salvation Army
+    Service: General Counselling
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Mental Health
+    Website: https://www.salvationarmy.org.au/adelaidecity/what-we-do/community-care/
+    Phone: (08) 8227 0199
+    Email: adminach@salvationarmy.org.au
+    Address: 277 Pirie St, Adelaide SA 5000
+    ###########
+---
+  #  Final point in program flow. Docassemble handles all document generation,
+  #  printing, emailing and downloading.
+
+mandatory: True
+question: Your document is ready.
+attachment:
+  - name: Recommended Services
+    filename: recommended_services_list
+    content: |
+      **Served by**: ${ALRMempName}, ${ALRMempRole}   
+      **Date**: ${current_datetime()}  
+      ______________________________________________________________________  
+      ${ALRMmdText}
+---
+  #  Determine what region the client is from based on their Location.
+  #  Docassemble does not like trying to assign a value if the 
+  #  relevant button has button fields within it.
+
+code: |
+  if ALRMcliLocate == 'Northern Suburbs' or ALRMcliLocate == 'Eastern Suburbs' or ALRMcliLocate == 'Southern Suburbs' or ALRMcliLocate == 'Western Suburbs':
+    ALRMcliRegion = 'Metropolitan'
+  elif ALRMcliLocate == 'Berri' or ALRMcliLocate == 'Ceduna' or ALRMcliLocate == 'Murray Bridge' or ALRMcliLocate == 'Mount Gambier' or ALRMcliLocate == 'Port Augusta' or ALRMcliLocate == 'Port Lincoln' or ALRMcliLocate == 'Port Pirie':
+    ALRMcliRegion = 'Regional'
+  else:
+    ALRMcliRegion = 'Remote'
+---
+  #  The service selection process for document generation and display.
+  #  Functions by filtering the serivces list against a given criteria
+  #  (e.g. only select services that have Gender Male or X) and inserting
+  #  them into a new list. This filtering is done based on:
+  #  Gender > Age > Region > Location > Keyterm
+  #  The final list is then populated only with the services that apply to
+  #  the client.
+
+code: |
+  #  Declare all dictionary lists required for filtering as empty.
+  ALRMlistGenderSorted = []
+  ALRMlistAgeSorted = []
+  ALRMlistRegionSorted = []
+  ALRMlistLocateSorted = []
+  ALRMlistKeytermSorted = []
+  ALRMlistDisplay = []
+  
+  #  Filter the Services list at the top of the file by client gender.
+  ALRMlistGenderSorted += [ALRMitem for ALRMitem in ALRMlistServices if ALRMitem['Gender'] == ALRMcliGender]
+  ALRMlistGenderSorted += [ALRMitem for ALRMitem in ALRMlistServices if ALRMitem['Gender'] == 'X']
+  
+  #  Filter the client gender list by client age range.
+  ALRMlistAgeSorted += [ALRMitem for ALRMitem in ALRMlistGenderSorted if ALRMitem['Age'] == ALRMcliAge]
+  ALRMlistAgeSorted += [ALRMitem for ALRMitem in ALRMlistGenderSorted if ALRMitem['Age'] == 'X']
+
+  #  Filter the client age range list by client region.
+  ALRMlistRegionSorted += [ALRMitem for ALRMitem in ALRMlistAgeSorted if ALRMitem['Region'] == ALRMcliRegion]
+
+  #  Filter the client region list by client location.
+  ALRMlistLocateSorted += [ALRMitem for ALRMitem in ALRMlistRegionSorted if ALRMitem['Location'] == ALRMcliLocate]
+  ALRMlistLocateSorted += [ALRMitem for ALRMitem in ALRMlistRegionSorted if ALRMitem['Location'] == 'X']
+  
+  #  Check if Family Violence checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMpisrChoices['ALRMfmlyViolent']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Family Violence']
+  
+  #  Check if Mental Health checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMpisrChoices['ALRMmentHealth']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Mental Health']
+
+  #  Check if Drug & Alcohol checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMpisrChoices['ALRMsubstance']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Drug & Alcohol']
+
+  #  Check if Homelessness checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMpisrChoices['ALRMhomeless']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Homelessness']
+
+  #  Check if Fiancial checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMpisrChoices['ALRMfinance']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Financial']
+
+  #  Check if Disability (Intellectual) checkbox was ticked
+  #  and then filterby that keyterm.
+  if ALRMpisrChoices['ALRMdisIntellect']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Disability (Intellectual)']
+
+  #  Check if Disability (Physical) checkbox was ticked
+  #  and then filterby that keyterm.
+  if ALRMpisrChoices['ALRMdisPhysical']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Disability (Physical)']
+
+  #  Check if Medical Health was ticked and then filter
+  #  by that keyterm.
+  if ALRMpisrChoices['ALRMmedical']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Medical Health']
+
+  #  Check if Family Law checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMliChoices['ALRMfmlyLaw']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Family Law']
+
+  #  Check if Child Protection checkbox was ticked and then 
+  #  filter by that keyterm.
+  if ALRMliChoices['ALRMchldProtect']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Child Protection']
+
+  #  Check if Personal Injury checkbox was ticked and then 
+  #  filter by that keyterm.
+  if ALRMliChoices['ALRMinjury']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Personal Injury']
+
+  #  Check if SACAT checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMliChoices['ALRMsacat']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'SACAT']
+  
+  #  Copy our final filtered list into a new list to
+  #  build our document. Ticking 'None of the Above'
+  #  at both opportunities means nothing will display.
+  ALRMlistDisplay = [ALRMitem for ALRMitem in ALRMlistKeytermSorted]
+    
+  #  Initialise Markdown display string as empty.
+  ALRMmdText = ""
+  
+  #  Iterate over every entry in the display list and
+  #  build our document in markdown in a single string.
+  #  This method is repeatable until you reach the 
+  #  string length limit for Python. That is unlikely
+  #  to happen in this program (it would need to be
+  #  hundreds of gigabytes long).
+  for ALRMitem in ALRMlistDisplay:
+    ALRMmdText += "**Organisation**: "
+    ALRMmdText += str(ALRMitem['Organisation'])
+    ALRMmdText += "<br>"
+    ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+    ALRMmdText += "**Service**: "
+    ALRMmdText += str(ALRMitem['Service'])
+    ALRMmdText += "<br>"
+    ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+    ALRMmdText += "**Website**: "
+    ALRMmdText += str(ALRMitem['Website'])
+    ALRMmdText += "<br>"
+    ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+      
+  #  Trim away any NA fields, they are of no use to
+  #  clients.
+    if ALRMitem['Phone'] != 'NA':
+      ALRMmdText += "**Phone Number**: "
+      ALRMmdText += str(ALRMitem['Phone'])
+      ALRMmdText += "<br>"
+      ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+        
+    if ALRMitem['Email'] != 'NA':
+      ALRMmdText += "**Email Address**: "
+      ALRMmdText += str(ALRMitem['Email'])
+      ALRMmdText += "<br>"
+      ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+        
+    if ALRMitem['Address'] != 'NA':
+      ALRMmdText += "**Address**: "
+      ALRMmdText += str(ALRMitem['Address'])
+      ALRMmdText += "<br>"
+      ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+      
+  #  Print a line to seperate each recommended service.
+    ALRMmdText += "  ______________________________________________________________________   "
+    ALRMmdText += "<br>"
+    ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+  
+  #  Markdown formatting is parsed differently when
+  #  inserted into the output pdf. This requires the
+  #  use of ASCII character codes to achieve the
+  #  intended result. It does slightly adjust the
+  #  preview formatting.
+---
+  #  Gather serving employee details for display on form.
+
+question: Employee Details
+fields:
+  - Employee Name: ALRMempName
+  - Employee Role: ALRMempRole
+    datatype: radio
+    choices:
+      - FSP
+      - Solicitor
+      - Law Clerk
+---
+  #  First set of captured client details. Concerned with
+  #  age and gender.
+  
+question: Client Details
+fields:
+  - Client Age: ALRMcliAge
+    choices:
+    - 12-17
+    - 18-25
+    - 26-50
+    - 50+
+  - Client Gender: ALRMcliGender
+    datatype: radio
+    choices:
+    - Male
+    - Female
+---
+  #  Second set of captured client details. Clicking a
+  #  region button will progress through to a set of
+  #  location buttons. Client region is determined above
+  #  once location is stored.
+
+question: Client Region
+buttons:
+  - Metropolitan:
+      question: Client Location
+      field: ALRMcliLocate
+      buttons:
+        - Northern Suburbs
+        - Eastern Suburbs
+        - Southern Suburbs
+        - Western Suburbs
+  - Regional:
+      question: Client Location
+      field: ALRMcliLocate
+      buttons:
+        - Berri
+        - Ceduna
+        - Murray Bridge
+        - Mount Gambier
+        - Port Augusta
+        - Port Lincoln
+        - Port Pirie
+  - Remote:
+      question: Client Location
+      field: ALRMcliLocate
+      buttons:
+        - APY Lands
+        - Iron Triangle
+        - Interstate
+---
+  #  Capturing what areas the client requires services
+  #  be recommended for. Docassemble automatically provides
+  #  a "None of the Above" option which sets all choices
+  #  in a given field to False.
+
+question: Issues of Concern
+fields:
+  - 'Presenting Issues/Support Request': ALRMpisrChoices
+    datatype: checkboxes
+    choices:
+      - Family Violence: ALRMfmlyViolent
+      - Mental Health: ALRMmentHealth
+      - Drug & Alcohol: ALRMsubstance
+      - Homelessness: ALRMhomeless
+      - Financial: ALRMfinance
+      - Disability (Intellectual): ALRMdisIntellect
+      - Disability (Physical): ALRMdisPhysical
+      - Medical Health: ALRMmedical
+  - 'Legal Issues': ALRMliChoices
+    datatype: checkboxes
+    choices:
+      - Family Law: ALRMfmlyLaw
+      - Child Protection: ALRMchldProtect
+      - Personaly Injruy: ALRMinjury
+      - SACAT: ALRMsacat
+---
