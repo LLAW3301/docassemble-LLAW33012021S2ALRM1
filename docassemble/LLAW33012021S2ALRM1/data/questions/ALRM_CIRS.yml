@@ -1081,34 +1081,41 @@ code: |
   for ALRMitem in ALRMlistDisplay:
     ALRMmdText += "**Organisation**: "
     ALRMmdText += str(ALRMitem['Organisation'])
-    ALRMmdText += "</br>"
+    ALRMmdText += "<br>"
+    ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
     ALRMmdText += "**Service**: "
     ALRMmdText += str(ALRMitem['Service'])
-    ALRMmdText += "</br>"
+    ALRMmdText += "<br>"
+    ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
     ALRMmdText += "**Website**: "
     ALRMmdText += str(ALRMitem['Website'])
-    ALRMmdText += "</br>"
+    ALRMmdText += "<br>"
+    ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
       
   #  Trim away any NA fields, they are of no use to
   #  clients.
     if ALRMitem['Phone'] != 'NA':
       ALRMmdText += "**Phone Number**: "
       ALRMmdText += str(ALRMitem['Phone'])
-      ALRMmdText += "</br>"
+      ALRMmdText += "<br>"
+      ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
         
     if ALRMitem['Email'] != 'NA':
       ALRMmdText += "**Email Address**: "
       ALRMmdText += str(ALRMitem['Email'])
-      ALRMmdText += "</br>"
+      ALRMmdText += "<br>"
+      ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
         
     if ALRMitem['Address'] != 'NA':
       ALRMmdText += "**Address**: "
       ALRMmdText += str(ALRMitem['Address'])
-      ALRMmdText += "</br>"
+      ALRMmdText += "<br>"
+      ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
       
   #  Print a line to seperate each recommended service.
     ALRMmdText += "  ______________________________________________________________________   "
-    ALRMmdText += "</br>"
+    ALRMmdText += "<br>"
+    ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
 ---
   #  Gather serving employee details for display on form.
 
