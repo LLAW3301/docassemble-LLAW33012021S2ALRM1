@@ -25,7 +25,6 @@ data:
   #  that service from being recommended. X applies to all choices in 
   #  entry (location contextual to region).
 
-
 #  - Organisation: The name of the Organisation providing the service.
 #    Service: Descriptive name for the service(s) provided.
 #    Age: 12-17, 18-25, 26-50, 50+, X
@@ -960,8 +959,8 @@ attachment:
       ${ALRMmdText}
 ---
   #  Determine what region the client is from based on their Location.
-  #  Docassemble does not like trying to derive a variable if the relevant
-  #  button has button fields within it.
+  #  Docassemble does not like trying to assign a value if the 
+  #  relevant button has button fields within it.
 
 code: |
   if ALRMcliLocate == 'Northern Suburbs' or ALRMcliLocate == 'Eastern Suburbs' or ALRMcliLocate == 'Southern Suburbs' or ALRMcliLocate == 'Western Suburbs':
@@ -980,7 +979,7 @@ code: |
   #  the client.
 
 code: |
-  #  Declare all dictionary lists required for sorting as empty.
+  #  Declare all dictionary lists required for filtering as empty.
   ALRMlistGenderSorted = []
   ALRMlistAgeSorted = []
   ALRMlistRegionSorted = []
@@ -1066,10 +1065,9 @@ code: |
   #  Copy our final filtered list into a new list to
   #  build our document. Ticking 'None of the Above'
   #  at both opportunities means nothing will display.
-  #  not entirely necessary but is cleaner.
   ALRMlistDisplay = [ALRMitem for ALRMitem in ALRMlistKeytermSorted]
     
-  #  Initialise display string as empty.
+  #  Initialise Markdown display string as empty.
   ALRMmdText = ""
   
   #  Iterate over every entry in the display list and
@@ -1116,6 +1114,12 @@ code: |
     ALRMmdText += "  ______________________________________________________________________   "
     ALRMmdText += "<br>"
     ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+  
+  #  Markdown formatting is parsed differently when
+  #  inserted into the output pdf. This requires the
+  #  use of ASCII character codes to achieve the
+  #  intended result. It does slightly adjust the
+  #  preview formatting.
 ---
   #  Gather serving employee details for display on form.
 
@@ -1148,7 +1152,7 @@ fields:
 ---
   #  Second set of captured client details. Clicking a
   #  region button will progress through to a set of
-  #  location button. Client region is determined above
+  #  location buttons. Client region is determined above
   #  once location is stored.
 
 question: Client Region
@@ -1182,7 +1186,7 @@ buttons:
 ---
   #  Capturing what areas the client requires services
   #  be recommended for. Docassemble automatically provides
-  #  a "None of the Above" option which flips all choices
+  #  a "None of the Above" option which sets all choices
   #  in a given field to False.
 
 question: Issues of Concern
