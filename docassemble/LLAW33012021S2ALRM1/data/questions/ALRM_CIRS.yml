@@ -1,4 +1,7 @@
 ---
+  #  Declaring dictionary lists for service sorting and variables to determine
+  #  client region as well as generate final output.
+
 objects:
   - ALRMlistGenderSorted: DAList
   - ALRMlistAgeSorted: DAList
@@ -9,10 +12,50 @@ objects:
   - ALRMcliRegion: 
   - ALRMmdText:
 ---
+  #  The original dictionary list in which all services are stored. At the current
+  #  time this makes the programs code less readable, it would be better if this
+  #  could be stored in a seperate file and referred to as needed.
+
 variable name: ALRMlistServices
 use objects: True
 data:
-    ###########
+    
+  #  Below is the template for the services list. Example values are 
+  #  provided within, inconsistency with their formats will prevent 
+  #  that service from being recommended. X applies to all choices in 
+  #  entry (location contextual to region).
+
+
+#  - Organisation: The name of the Organisation providing the service.
+#    Service: Descriptive name for the service(s) provided.
+#    Age: 12-17, 18-25, 26-50, 50+, X
+#    Gender: Male, Female, X
+#    Region: Metropolitan, Regional, Remote
+#    Location: (Region = Metropolitan: Northern Suburbs, Eastern Suburbs, Southern Suburbs, Western Suburbs) (Region = Regional: Berri, Ceduna, Murray Brridge, Mount Gambier, Port Augusta, Port Lincoln, Port Pirie) (Region = Remote: APY Lands, Iron Triangle, Interstate) or X
+#    Keyterm: Family Violence, Mental Health, Drug & Alcohol, Homelessness, Financial, Disability (Intellectual), Disability (Physical), Medical Health, Family Law, Child Protection, Personal Injury, SACAT
+#    Website: URL or NA
+#    Phone: (Landline: (XX) XXXX XXXX, Mobile: XXXX XXX XXX, None: NA)
+#    Email: Email Address or NA
+#    Address: Street Address (as listed by service provider) or NA
+#    ###########
+
+  #  A blank copy provided for your convenience. Remove leading 
+  #  '#' but do not remove the entire bottom row.
+
+#  - Organisation: 
+#    Service: 
+#    Age: 
+#    Gender: 
+#    Region: 
+#    Location: 
+#    Keyterm: 
+#    Website: 
+#    Phone: 
+#    Email: 
+#    Address: 
+#    ###########
+
+
   - Organisation: Aboriginal Sobriety Group
     Service: Lakalinjeri Tumbetin Waal (24/7 Live-In Rehabilitation Service)
     Age: X
@@ -902,6 +945,9 @@ data:
     Address: 277 Pirie St, Adelaide SA 5000
     ###########
 ---
+  #  Final point in program flow. Docassemble handles all document generation,
+  #  printing, emailing and downloading.
+
 mandatory: True
 question: Your document is ready.
 attachment:
@@ -913,6 +959,10 @@ attachment:
       ______________________________________________________________________  
       ${ALRMmdText}
 ---
+  #  Determine what region the client is from based on their Location.
+  #  Docassemble does not like trying to derive a variable if the relevant
+  #  button has button fields within it.
+
 code: |
   if ALRMcliLocate == 'Northern Suburbs' or ALRMcliLocate == 'Eastern Suburbs' or ALRMcliLocate == 'Southern Suburbs' or ALRMcliLocate == 'Western Suburbs':
     ALRMcliRegion = 'Metropolitan'
@@ -921,7 +971,16 @@ code: |
   else:
     ALRMcliRegion = 'Remote'
 ---
+  #  The service selection process for document generation and display.
+  #  Functions by filtering the serivces list against a given criteria
+  #  (e.g. only select services that have Gender Male or X) and inserting
+  #  them into a new list. This filtering is done based on:
+  #  Gender > Age > Region > Location > Keyterm
+  #  The final list is then populated only with the services that apply to
+  #  the client.
+
 code: |
+  #  Declare all dictionary lists required for sorting as empty.
   ALRMlistGenderSorted = []
   ALRMlistAgeSorted = []
   ALRMlistRegionSorted = []
@@ -929,58 +988,97 @@ code: |
   ALRMlistKeytermSorted = []
   ALRMlistDisplay = []
   
+  #  Filter the Services list at the top of the file by client gender.
   ALRMlistGenderSorted += [ALRMitem for ALRMitem in ALRMlistServices if ALRMitem['Gender'] == ALRMcliGender]
   ALRMlistGenderSorted += [ALRMitem for ALRMitem in ALRMlistServices if ALRMitem['Gender'] == 'X']
   
+  #  Filter the client gender list by client age range.
   ALRMlistAgeSorted += [ALRMitem for ALRMitem in ALRMlistGenderSorted if ALRMitem['Age'] == ALRMcliAge]
   ALRMlistAgeSorted += [ALRMitem for ALRMitem in ALRMlistGenderSorted if ALRMitem['Age'] == 'X']
 
+  #  Filter the client age range list by client region.
   ALRMlistRegionSorted += [ALRMitem for ALRMitem in ALRMlistAgeSorted if ALRMitem['Region'] == ALRMcliRegion]
 
+  #  Filter the client region list by client location.
   ALRMlistLocateSorted += [ALRMitem for ALRMitem in ALRMlistRegionSorted if ALRMitem['Location'] == ALRMcliLocate]
   ALRMlistLocateSorted += [ALRMitem for ALRMitem in ALRMlistRegionSorted if ALRMitem['Location'] == 'X']
   
+  #  Check if Family Violence checkbox was ticked and then filter
+  #  by that keyterm.
   if ALRMpisrChoices['ALRMfmlyViolent']:
     ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Family Violence']
   
+  #  Check if Mental Health checkbox was ticked and then filter
+  #  by that keyterm.
   if ALRMpisrChoices['ALRMmentHealth']:
     ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Mental Health']
 
+  #  Check if Drug & Alcohol checkbox was ticked and then filter
+  #  by that keyterm.
   if ALRMpisrChoices['ALRMsubstance']:
     ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Drug & Alcohol']
 
+  #  Check if Homelessness checkbox was ticked and then filter
+  #  by that keyterm.
   if ALRMpisrChoices['ALRMhomeless']:
     ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Homelessness']
 
+  #  Check if Fiancial checkbox was ticked and then filter
+  #  by that keyterm.
   if ALRMpisrChoices['ALRMfinance']:
     ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Financial']
 
+  #  Check if Disability (Intellectual) checkbox was ticked
+  #  and then filterby that keyterm.
   if ALRMpisrChoices['ALRMdisIntellect']:
     ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Disability (Intellectual)']
 
+  #  Check if Disability (Physical) checkbox was ticked
+  #  and then filterby that keyterm.
   if ALRMpisrChoices['ALRMdisPhysical']:
     ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Disability (Physical)']
 
+  #  Check if Medical Health was ticked and then filter
+  #  by that keyterm.
   if ALRMpisrChoices['ALRMmedical']:
     ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Medical Health']
 
+  #  Check if Family Law checkbox was ticked and then filter
+  #  by that keyterm.
   if ALRMliChoices['ALRMfmlyLaw']:
     ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Family Law']
 
+  #  Check if Child Protection checkbox was ticked and then 
+  #  filter by that keyterm.
   if ALRMliChoices['ALRMchldProtect']:
     ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Child Protection']
 
+  #  Check if Personal Injury checkbox was ticked and then 
+  #  filter by that keyterm.
   if ALRMliChoices['ALRMinjury']:
     ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Personal Injury']
 
+  #  Check if SACAT checkbox was ticked and then filter
+  #  by that keyterm.
   if ALRMliChoices['ALRMsacat']:
     ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'SACAT']
   
+  #  Copy our final filtered list into a new list to
+  #  build our document. Ticking 'None of the Above'
+  #  at both opportunities means nothing will display.
+  #  not entirely necessary but is cleaner.
   ALRMlistDisplay = [ALRMitem for ALRMitem in ALRMlistKeytermSorted]
     
+  #  Initialise display string as empty.
   ALRMmdText = ""
-  for ALRMitem in ALRMlistKeytermSorted:
-    #for ALRMitem in ALRMlistKeytermSorted:
+  
+  #  Iterate over every entry in the display list and
+  #  build our document in markdown in a single string.
+  #  This method is repeatable until you reach the 
+  #  string length limit for Python. That is unlikely
+  #  to happen in this program (it would need to be
+  #  hundreds of gigabytes long).
+  for ALRMitem in ALRMlistDisplay:
     ALRMmdText += "**Organisation**: "
     ALRMmdText += str(ALRMitem['Organisation'])
     ALRMmdText += "</br>"
@@ -991,6 +1089,8 @@ code: |
     ALRMmdText += str(ALRMitem['Website'])
     ALRMmdText += "</br>"
       
+  #  Trim away any NA fields, they are of no use to
+  #  clients.
     if ALRMitem['Phone'] != 'NA':
       ALRMmdText += "**Phone Number**: "
       ALRMmdText += str(ALRMitem['Phone'])
@@ -1005,9 +1105,13 @@ code: |
       ALRMmdText += "**Address**: "
       ALRMmdText += str(ALRMitem['Address'])
       ALRMmdText += "</br>"
-        
+      
+  #  Print a line to seperate each recommended service.
     ALRMmdText += "  ______________________________________________________________________   "
+    ALRMmdText += "</br>"
 ---
+  #  Gather serving employee details for display on form.
+
 question: Employee Details
 fields:
   - Employee Name: ALRMempName
@@ -1018,6 +1122,9 @@ fields:
       - Solicitor
       - Law Clerk
 ---
+  #  First set of captured client details. Concerned with
+  #  age and gender.
+  
 question: Client Details
 fields:
   - Client Age: ALRMcliAge
@@ -1032,6 +1139,11 @@ fields:
     - Male
     - Female
 ---
+  #  Second set of captured client details. Clicking a
+  #  region button will progress through to a set of
+  #  location button. Client region is determined above
+  #  once location is stored.
+
 question: Client Region
 buttons:
   - Metropolitan:
@@ -1061,6 +1173,11 @@ buttons:
         - Iron Triangle
         - Interstate
 ---
+  #  Capturing what areas the client requires services
+  #  be recommended for. Docassemble automatically provides
+  #  a "None of the Above" option which flips all choices
+  #  in a given field to False.
+
 question: Issues of Concern
 fields:
   - 'Presenting Issues/Support Request': ALRMpisrChoices
