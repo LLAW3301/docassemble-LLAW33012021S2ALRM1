@@ -1,4 +1,28 @@
 ---
+metadata:
+  title: |
+    Civil Internal Referral System
+  short title: |
+    Civil Referral
+  description: |
+    Civil Services Referral Tool
+  authors:
+    - name: Amy Blight
+      organization: Flinders University
+    - name: Amani Obaida
+      organization: Flinders University
+    - name: Bradley Hawkes
+      organization: Flinders University
+    - name: Brayden Tansell
+      organization: Flinders University
+    - name: Eliza Page
+      organization: Flinders University
+  revision_date: 2021-10-16
+---
+features:
+  debug: False
+  hide standard menu: True
+---
   #  Declaring dictionary lists for service sorting and variables to determine
   #  client region as well as generate final output.
 
@@ -957,6 +981,8 @@ attachment:
       **Date**: ${current_datetime()}  
       ______________________________________________________________________  
       ${ALRMmdText}
+buttons:
+  - Exit: exit
 ---
   #  Determine what region the client is from based on their Location.
   #  Docassemble does not like trying to assign a value if the 
@@ -1209,4 +1235,18 @@ fields:
       - Child Protection: ALRMchldProtect
       - Personaly Injruy: ALRMinjury
       - SACAT: ALRMsacat
+---
+# Modify the post default screen part to attribute work to Flinders and your client
+# Remember to replace XXXX with your client's name.
+default screen parts:
+  post: |
+    <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">
+    <div style="margin: 5px"><img src="https://staff.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png" height="40">
+    </div>
+    <div style="margin: 5px; text-align: right">
+    <cite><small><i>
+    Developed by Flinders University in collaboration with ALRM
+    </i></small></cite>
+    </div>
+    </div>
 ---

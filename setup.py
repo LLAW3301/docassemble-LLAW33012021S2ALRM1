@@ -45,7 +45,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.LLAW33012021S2ALRM1',
       version='',
       description=(''),
-      long_description='# docassemble.LLAW33012021S2ALRM1\r\n\r\n\r\n\r\n## Author\r\n\r\nBrayden Tansell, tans0013@flinders.edu.au\r\n\r\n',
+      long_description="### Civil Internal Referral System<br>\r\n---\r\n<p>This application was created to consolidate the process of client referral<br>\r\ninto a a single, more efficient process. The application will ask the user for<br>\r\ntheir clients' age, gender, region, general location and what areas they<br>\r\nrequire support in. The application will then produce a list of applicable<br>\r\nsupport services tailored to the clients needs. This list can be downloaded,<br>\r\nprinted and emailed as necessary to provide the greatest ease of use to the<br>\r\nclient.</p>\r\n\r\n<p>The Civil Internal Referral System was created for, and in collaboration with,<br>\r\nthe Aboriginal Legal Rights Movement. ALRM is a public not-for-profit<br>\r\norganisation focused on protecting the interests and rights of Aboriginal and<br>\r\nTorres Srait Islander (ATSI) people.</p>\r\n\r\n<p><strong>ABN</strong>: 32 942 723 464</p>\r\n\r\n#### Authors:\r\n---\r\nAmy Blight<br>\r\nAmani Obaida<br>\r\nBradely Hawkes<br>\r\nBrayden Tansell<br>\r\nEliza Page",
       long_description_content_type='text/markdown',
       author='Brayden Tansell',
       author_email='tans0013@flinders.edu.au',
