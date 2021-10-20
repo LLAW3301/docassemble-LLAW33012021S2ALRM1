@@ -1,4 +1,6 @@
 ---
+  #  Miscellaneous information.
+  
 metadata:
   title: |
     Civil Internal Referral System
@@ -17,17 +19,23 @@ metadata:
       organization: Flinders University
     - name: Eliza Page
       organization: Flinders University
-  revision_date: 2021-10-18
+  revision_date: 2021-10-20
 ---
+  #  Disable debug elements.
+  
 features:
   debug: False
   hide standard menu: True
 ---
+  #  Include services list.
+  
+include:
+  - ALRM_Services.yml
+---
   #  Declaring dictionary lists for service sorting and variables to determine
   #  client region as well as generate final output.
+  
 use objects: True
-objects from file:
-  - ALRMlistServices: ALRM_Services.yml
 objects:  
   - ALRMlistGenderSorted: DAList
   - ALRMlistAgeSorted: DAList
@@ -40,7 +48,7 @@ objects:
 ---
   #  Final point in program flow. Docassemble handles all document generation,
   #  printing, emailing and downloading.
-
+  
 mandatory: True
 question: Your document is ready.
 attachment:
@@ -75,7 +83,6 @@ code: |
   #  the client.
 
 code: |
-  ALRMlistServices = objects_from_file('ALRM_Services.yml', name='ALRMlistServices')
   #  Declare all dictionary lists required for filtering as empty.
   ALRMlistGenderSorted = []
   ALRMlistAgeSorted = []
@@ -307,8 +314,8 @@ fields:
       - Personal Injruy: ALRMinjury
       - SACAT: ALRMsacat
 ---
-# Modify the post default screen part to attribute work to Flinders and your client
-# Remember to replace XXXX with your client's name.
+  #  Attributing work to Flinders and client.
+
 default screen parts:
   post: |
     <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">
