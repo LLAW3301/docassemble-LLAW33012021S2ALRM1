@@ -924,3 +924,1311 @@ data:
     Email: adminach@salvationarmy.org.au
     Address: 277 Pirie St, Adelaide SA 5000
     ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Nganampa Health Council
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: APY Lands
+    Keyterm: Medical
+    Website: https://www.nganampahealth.com.au
+    Phone: (08) 8952 5300
+    Email: NA
+    Address: 3 Wilkinson Street, Alice Springs NT 0871
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Nganampa Health Council
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: APY Lands
+    Keyterm: Mental Health
+    Website: https://www.nganampahealth.com.au
+    Phone: (08) 8952 5300
+    Email: NA
+    Address: 3 Wilkinson Street, Alice Springs NT 0871
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Nganampa Health Council
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: APY Lands
+    Keyterm: Disability (Intellectual)
+    Website: https://www.nganampahealth.com.au
+    Phone: (08) 8952 5300
+    Email: NA
+    Address: 3 Wilkinson Street, Alice Springs NT 0871
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Nganampa Health Council
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: APY Lands
+    Keyterm: Disability (Physical)
+    Website: https://www.nganampahealth.com.au
+    Phone: (08) 8952 5300
+    Email: NA
+    Address: 3 Wilkinson Street, Alice Springs NT 0871
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Yadu Health Service Aboriginal Corporation
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Medical
+    Website: https://www.yadu.org.au
+    Phone: (08) 8626 2500
+    Email: NA
+    Address: 1 Eyre Highway, Ceduna SA 5690
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Yadu Health Service Aboriginal Corporation
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Mental Health
+    Website: https://www.yadu.org.au
+    Phone: (08) 8626 2500
+    Email: NA
+    Address: 1 Eyre Highway, Ceduna SA 5690
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Yadu Health Service Aboriginal Corporation
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Disability (Intellectual)
+    Website: https://www.yadu.org.au
+    Phone: (08) 8626 2500
+    Email: NA
+    Address: 1 Eyre Highway, Ceduna SA 5690
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Yadu Health Service Aboriginal Corporation
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Disability (Physical)
+    Website: https://www.yadu.org.au
+    Phone: (08) 8626 2500
+    Email: NA
+    Address: 1 Eyre Highway, Ceduna SA 5690
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Pangula Mannamurna Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Mount Gambier
+    Keyterm: Medical
+    Website: https://www.pangula.org.au
+    Phone: (08) 8724 7270
+    Email: NA
+    Address: 191 Commercial Street, West Mount Gambier SA 5290
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Pangula Mannamurna Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Mount Gambier
+    Keyterm: Mental Health
+    Website: https://www.pangula.org.au
+    Phone: (08) 8724 7270
+    Email: NA
+    Address: 191 Commercial Street, West Mount Gambier SA 5290
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Pangula Mannamurna Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Mount Gambier
+    Keyterm: Disability (Intellectual)
+    Website: https://www.pangula.org.au
+    Phone: (08) 8724 7270
+    Email: NA
+    Address: 191 Commercial Street, West Mount Gambier SA 5290
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Pangula Mannamurna Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Mount Gambier
+    Keyterm: Disability (Physical)
+    Website: https://www.pangula.org.au
+    Phone: (08) 8724 7270
+    Email: NA
+    Address: 191 Commercial Street, West Mount Gambier SA 5290
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Moorundi Aboriginal Community Controlled Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Murray Bridge
+    Keyterm: Medical
+    Website: https://www.moorundi.org.au
+    Phone: (08) 8531 0289
+    Email: NA
+    Address: 1 Wharf Road, Murray Bridge SA 5253
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Moorundi Aboriginal Community Controlled Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Murray Bridge
+    Keyterm: Mental Health
+    Website: https://www.moorundi.org.au
+    Phone: (08) 8531 0289
+    Email: NA
+    Address: 1 Wharf Road, Murray Bridge SA 5253
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Moorundi Aboriginal Community Controlled Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Murray Bridge
+    Keyterm: Disability (Intellectual)
+    Website: https://www.moorundi.org.au
+    Phone: (08) 8531 0289
+    Email: NA
+    Address: 1 Wharf Road, Murray Bridge SA 5253
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Moorundi Aboriginal Community Controlled Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Murray Bridge
+    Keyterm: Disability (Physical)
+    Website: https://www.moorundi.org.au
+    Phone: (08) 8531 0289
+    Email: NA
+    Address: 1 Wharf Road, Murray Bridge SA 5253
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Oak Valley Health Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Medical
+    Website: https://www.maralingatjarutja.com
+    Phone: (08) 8670 4207
+    Email: NA
+    Address: 43 McKenzie Street, Ceduna SA 5690
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Oak Valley Health Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Mental Health
+    Website: https://www.maralingatjarutja.com
+    Phone: (08) 8670 4207
+    Email: NA
+    Address: 43 McKenzie Street, Ceduna SA 5690
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Oak Valley Health Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Disability (Intellectual)
+    Website: https://www.maralingatjarutja.com
+    Phone: (08) 8670 4207
+    Email: NA
+    Address: 43 McKenzie Street, Ceduna SA 5690
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Oak Valley Health Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Disability (Physical)
+    Website: https://www.maralingatjarutja.com
+    Phone: (08) 8670 4207
+    Email: NA
+    Address: 43 McKenzie Street, Ceduna SA 5690
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Pika Wiya Health Service Aboriginal Coporation
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Augusta
+    Keyterm: Medical
+    Website: https://www.pikawiyahealth.org.au
+    Phone: (08) 8642 9904
+    Email: NA
+    Address: 40-46 Dartmouth Street, Port Augusta SA 5700
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Pika Wiya Health Service Aboriginal Coporation
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Augusta
+    Keyterm: Mental Health
+    Website: https://www.pikawiyahealth.org.au
+    Phone: (08) 8642 9904
+    Email: NA
+    Address: 40-46 Dartmouth Street, Port Augusta SA 5700
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Pika Wiya Health Service Aboriginal Coporation
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Augusta
+    Keyterm: Disability (Intellectual)
+    Website: https://www.pikawiyahealth.org.au
+    Phone: (08) 8642 9904
+    Email: NA
+    Address: 40-46 Dartmouth Street, Port Augusta SA 5700
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Pika Wiya Health Service Aboriginal Coporation
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Augusta
+    Keyterm: Disability (Physical)
+    Website: https://www.pikawiyahealth.org.au
+    Phone: (08) 8642 9904
+    Email: NA
+    Address: 40-46 Dartmouth Street, Port Augusta SA 5700
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Pika Wiya Health Service Aboriginal Coporation
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Iron Triangle
+    Keyterm: Medical
+    Website: https://www.pikawiyahealth.org.au
+    Phone: (08) 8642 9904
+    Email: NA
+    Address: 40-46 Dartmouth Street, Port Augusta SA 5700
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Pika Wiya Health Service Aboriginal Coporation
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Iron Triangle
+    Keyterm: Mental Health
+    Website: https://www.pikawiyahealth.org.au
+    Phone: (08) 8642 9904
+    Email: NA
+    Address: 40-46 Dartmouth Street, Port Augusta SA 5700
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Pika Wiya Health Service Aboriginal Coporation
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Iron Triangle
+    Keyterm: Disability (Intellectual)
+    Website: https://www.pikawiyahealth.org.au
+    Phone: (08) 8642 9904
+    Email: NA
+    Address: 40-46 Dartmouth Street, Port Augusta SA 5700
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Pika Wiya Health Service Aboriginal Coporation
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Iron Triangle
+    Keyterm: Disability (Physical)
+    Website: https://www.pikawiyahealth.org.au
+    Phone: (08) 8642 9904
+    Email: NA
+    Address: 40-46 Dartmouth Street, Port Augusta SA 5700
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Port Lincoln Aboriginal Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Lincoln
+    Keyterm: Medical
+    Website: https://www.plahs.org.au
+    Phone: (08) 8683 0162
+    Email: NA
+    Address: 19A Oxford Terrace, Port Lincoln SA 5606
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Port Lincoln Aboriginal Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Lincoln
+    Keyterm: Mental Health
+    Website: https://www.plahs.org.au
+    Phone: (08) 8683 0162
+    Email: NA
+    Address: 19A Oxford Terrace, Port Lincoln SA 5606
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Port Lincoln Aboriginal Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Lincoln
+    Keyterm: Disability (Intellectual)
+    Website: https://www.plahs.org.au
+    Phone: (08) 8683 0162
+    Email: NA
+    Address: 19A Oxford Terrace, Port Lincoln SA 5606
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Port Lincoln Aboriginal Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Lincoln
+    Keyterm: Disability (Physical)
+    Website: https://www.plahs.org.au
+    Phone: (08) 8683 0162
+    Email: NA
+    Address: 19A Oxford Terrace, Port Lincoln SA 5606
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Nunyara Aboriginal Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Iron Triangle
+    Keyterm: Medical
+    Website: https://www.nunyara.org.au
+    Phone: (08) 8649 4366
+    Email: NA
+    Address: 17–27 Tully Street, Whyalla Stuart SA 5608
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Nunyara Aboriginal Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Iron Triangle
+    Keyterm: Mental Health
+    Website: https://www.nunyara.org.au
+    Phone: (08) 8649 4366
+    Email: NA
+    Address: 17–27 Tully Street, Whyalla Stuart SA 5608
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Nunyara Aboriginal Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Iron Triangle
+    Keyterm: Disability (Intellectual)
+    Website: https://www.nunyara.org.au
+    Phone: (08) 8649 4366
+    Email: NA
+    Address: 17–27 Tully Street, Whyalla Stuart SA 5608
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Nunyara Aboriginal Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Iron Triangle
+    Keyterm: Disability (Physical)
+    Website: https://www.nunyara.org.au
+    Phone: (08) 8649 4366
+    Email: NA
+    Address: 17–27 Tully Street, Whyalla Stuart SA 5608
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Yalata - Tullawon Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Medical
+    Website: https://www.tullawon.org.au
+    Phone: (08) 8625 6237
+    Email: NA
+    Address: PMB 45, Ceduna SA 5690
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Yalata - Tullawon Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Mental Health
+    Website: https://www.tullawon.org.au
+    Phone: (08) 8625 6237
+    Email: NA
+    Address: PMB 45, Ceduna SA 5690
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Yalata - Tullawon Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Disability (Intellectual)
+    Website: https://www.tullawon.org.au
+    Phone: (08) 8625 6237
+    Email: NA
+    Address: PMB 45, Ceduna SA 5690
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Yalata - Tullawon Health Service Inc.
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Disability (Physical)
+    Website: https://www.tullawon.org.au
+    Phone: (08) 8625 6237
+    Email: NA
+    Address: PMB 45, Ceduna SA 5690
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Umoona Tjutagku Health Service Aboriginal Corporation
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Interstate
+    Keyterm: Medical
+    Website: https://www.uths.org.au
+    Phone: (08) 8672 5255
+    Email: NA
+    Address: Lot 8, Umoona Road, Coober Pedy SA 5723
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Umoona Tjutagku Health Service Aboriginal Corporation
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Interstate
+    Keyterm: Mental Health
+    Website: https://www.uths.org.au
+    Phone: (08) 8672 5255
+    Email: NA
+    Address: Lot 8, Umoona Road, Coober Pedy SA 5723
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Umoona Tjutagku Health Service Aboriginal Corporation
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Interstate
+    Keyterm: Disability (Intellectual)
+    Website: https://www.uths.org.au
+    Phone: (08) 8672 5255
+    Email: NA
+    Address: Lot 8, Umoona Road, Coober Pedy SA 5723
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Umoona Tjutagku Health Service Aboriginal Corporation
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Interstate
+    Keyterm: Disability (Physical)
+    Website: https://www.uths.org.au
+    Phone: (08) 8672 5255
+    Email: NA
+    Address: Lot 8, Umoona Road, Coober Pedy SA 5723
+    ###########
+  - Organisation: Country South Australia Primary Health Network (CSAPHN)
+    Service: Primary Medical Care - Umoona Tjutagku Health Service Aboriginal Corporation
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Interstate
+    Keyterm: Medical
+    Website: https://www.uths.org.au
+    Phone: (08) 8672 5255
+    Email: NA
+    Address: Lot 8, Umoona Road, Coober Pedy SA 5723
+    ###########
+  - Organisation: Royal Adelaide Hospital
+    Service: Primary Medical Care - Royal Adelaide Hospital ATSI Support Hub
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Medical
+    Website: https://www.rah.sa.gov.au/patients-and-visitors/aboriginal-and-torres-strait-islander-support
+    Phone: (08) 7074 0000
+    Email: NA
+    Address: RAH Main Entrance Level 3, Port Road Adelaide, SA 5000
+    ###########
+  - Organisation: Royal Adelaide Hospital
+    Service: Primary Medical Care - Royal Adelaide Hospital ATSI Support Hub
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Mental Health
+    Website: https://www.rah.sa.gov.au/patients-and-visitors/aboriginal-and-torres-strait-islander-support
+    Phone: (08) 7074 0000
+    Email: NA
+    Address: RAH Main Entrance Level 3, Port Road Adelaide, SA 5000
+    ###########
+  - Organisation: Royal Adelaide Hospital
+    Service: Primary Medical Care - Royal Adelaide Hospital ATSI Support Hub
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Disability (Intellectual)
+    Website: https://www.rah.sa.gov.au/patients-and-visitors/aboriginal-and-torres-strait-islander-support
+    Phone: (08) 7074 0000
+    Email: NA
+    Address: RAH Main Entrance Level 3, Port Road Adelaide, SA 5000
+    ###########
+  - Organisation: Royal Adelaide Hospital
+    Service: Primary Medical Care - Royal Adelaide Hospital ATSI Support Hub
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Disability (Physical)
+    Website: https://www.rah.sa.gov.au/patients-and-visitors/aboriginal-and-torres-strait-islander-support
+    Phone: (08) 7074 0000
+    Email: NA
+    Address: RAH Main Entrance Level 3, Port Road Adelaide, SA 5000
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Intellectual / Physcial Disability Counseling Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Disability (Intellectual)
+    Website: https://www.nunku.org.au/our-services/social-emotional/disability-counselling/
+    Phone: (08) 8406 1600
+    Email: NA
+    Address: 182 - 190 Wakefield Street, Adelaide SA 5000
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Intellectual / Physcial Disability Counseling Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Disability (Physical)
+    Website: https://www.nunku.org.au/our-services/social-emotional/disability-counselling/
+    Phone: (08) 8406 1600
+    Email: NA
+    Address: 182 - 190 Wakefield Street, Adelaide SA 5000
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Intellectual / Physcial Disability Counseling Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Disability (Intellectual)
+    Website: https://www.nunku.org.au/our-services/social-emotional/disability-counselling/
+    Phone: (08) 8254 5300
+    Email: NA
+    Address: 28-30 Brady Street, Elizabeth Downs SA 5113
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Intellectual / Physcial Disability Counseling Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Disability (Physical)
+    Website: https://www.nunku.org.au/our-services/social-emotional/disability-counselling/
+    Phone: (08) 8254 5300
+    Email: NA
+    Address: 28-30 Brady Street, Elizabeth Downs SA 5113
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Free Dental Health Services
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Medical
+    Website: https://www.nunku.org.au/our-services/physical/dental/
+    Phone: (08) 8406 1600
+    Email: NA
+    Address: 182 - 190 Wakefield Street, Adelaide SA 5000
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Maternal Child and Family Health Services 
+    Age: X
+    Gender: Female
+    Region: Metropolitan
+    Location: X
+    Keyterm: Medical
+    Website: https://www.nunku.org.au/our-services/physical/maternal-child-health/
+    Phone: (08) 8406 1600
+    Email: NA
+    Address: 182 - 190 Wakefield Street, Adelaide SA 5000
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Maternal Child and Family Health Services 
+    Age: X
+    Gender: Female
+    Region: Metropolitan
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.nunku.org.au/our-services/physical/maternal-child-health/
+    Phone: (08) 8406 1600
+    Email: NA
+    Address: 182 - 190 Wakefield Street, Adelaide SA 5000
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Maternal Child and Family Health Services 
+    Age: X
+    Gender: Female
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Medical
+    Website: https://www.nunku.org.au/our-services/physical/maternal-child-health/
+    Phone: (08) 8254 5300
+    Email: NA
+    Address: 28-30 Brady Street, Elizabeth Downs SA 5113
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Maternal Child and Family Health Services 
+    Age: X
+    Gender: Female
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Family Violence
+    Website: https://www.nunku.org.au/our-services/physical/maternal-child-health/
+    Phone: (08) 8254 5300
+    Email: NA
+    Address: 28-30 Brady Street, Elizabeth Downs SA 5113
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Tackling smoking ‘Quit Smoking’ Service 
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Medical
+    Website: https://www.nunku.org.au/our-services/physical/tackling-smoking/ 
+    Phone: NA
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Chronic Condition Managment Team Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Medical
+    Website: https://www.nunku.org.au/our-services/physical/chronic-conditions-management/ 
+    Phone: (08) 8406 1600
+    Email: NA
+    Address: 182 - 190 Wakefield Street, Adelaide SA 5000
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Chronic Condition Managment Team Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Medical
+    Website: https://www.nunku.org.au/our-services/physical/chronic-conditions-management/ 
+    Phone: (08) 8254 5300
+    Email: NA
+    Address: 28-30 Brady Street, Elizabeth Downs SA 5113
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Emergency Material/Food/Financial Counselling Relief Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Financial
+    Website: https://www.nunku.org.au/our-services/social-emotional/emergency-relief/
+    Phone: (08) 8406 1600 
+    Email: NA
+    Address: 182 - 190 Wakefield Street, Adelaide SA 5000
+    ###########
+  - Organisation: Nunkuwarrin Yunti
+    Service: Drug & Alcohol Harm Minimisation Service 
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Northern Suburbs
+    Keyterm: Drug & Alcohol
+    Website: https://www.nunku.org.au/our-services/social-emotional/drug-alcohol-support/
+    Phone: (08) 8406 1600 
+    Email: NA
+    Address: 182 - 190 Wakefield Street, Adelaide SA 5000
+    ###########
+  - Organisation: FMHSS APY Lands
+    Service: Family Mental Health Support Service  
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: APY Lands
+    Keyterm: Mental Health
+    Website: https://www.skylight.org.au/our-services/fmhss-apy-lands
+    Phone: 1300 287 051
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: KWY Safety Hub
+    Service: Stronger Safer Families Outreach Hub service  
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: Southern Suburbs
+    Keyterm: Family Violence
+    Website: https://www.kwy.org.au/our-services
+    Phone: (08) 8377 7822
+    Email: Admin@kwy.org.au 
+    Address: NA
+    ###########
+  - Organisation: KWY Safety Hub
+    Service: Stronger Safer Families Outreach Hub service  
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.kwy.org.au/our-services
+    Phone: (08) 8377 7822
+    Email: Admin@kwy.org.au 
+    Address: NA
+    ###########
+  - Organisation: Aboriginal Family Support Services Limited (AFSS)
+    Service: Community Safety and Wellbeing program  
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.afss.com.au/about-us
+    Phone: (08) 8254 1077
+    Email: csw@afss.com.au
+    Address: NA
+    ###########
+  - Organisation: Aboriginal Family Support Services Limited (AFSS)
+    Service: Community Safety and Wellbeing program  
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.afss.com.au/community-wellbeing
+    Phone: (08) 8254 1077
+    Email: csw@afss.com.au
+    Address: NA
+    ###########
+  - Organisation: Baptist Care SA
+    Service: Indigenous Homelessness Support Service 
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Homelessness
+    Website: https://baptistcaresa.org.au/service/homelessness-services/aboriginal-support
+    Phone: (08) 8118 5200
+    Email: csw@afss.com.au
+    Address: 11-19 Millers Court, Adelaide SA 5000
+    ###########
+  - Organisation: Baptist Care SA
+    Service: Community Food Hub Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Homelessness
+    Website: https://baptistcaresa.org.au/service/homelessness-services/community-food-hub
+    Phone: (08) 8118 5200
+    Email: csw@afss.com.au
+    Address: 216 Wright Street, Adelaide SA 5000
+    ###########
+  - Organisation: Baptist Care SA
+    Service: WestCare Centre
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Homelessness
+    Website: https://baptistcaresa.org.au/service/homelessness-services/food-relief
+    Phone: NA
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Baptist Care SA
+    Service: WestCare Centre
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Financial
+    Website: https://baptistcaresa.org.au/service/homelessness-services/food-relief
+    Phone: NA
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Baptist Care SA
+    Service: Emergency Relief Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Financial
+    Website: https://baptistcaresa.org.au/service/homelessness-services/food-relief
+    Phone: NA
+    Email: NA
+    Address: 11-19 Millers Court, Adelaide SA 5000
+    ###########
+  - Organisation: Baptist Care SA
+    Service: Emergency Relief Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Homelessness
+    Website: https://baptistcaresa.org.au/service/homelessness-services/food-relief
+    Phone: NA
+    Email: NA
+    Address: 11-19 Millers Court, Adelaide SA 5000
+    ###########
+  - Organisation: Government of SA Housing Authority
+    Service: Housing Authority Homelessness Gateway
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Homelessness
+    Website: https://www.housing.sa.gov.au/latest-news/homelessness-gateway-available-24_7 
+    Phone: 1800 003 308
+    Email: housingcustomers@sa.gov.au
+    Address: NA
+    ###########
+  - Organisation: Government of SA Housing Authority
+    Service: Housing Authority Homelessness Gateway
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Homelessness
+    Website: https://www.housing.sa.gov.au/latest-news/homelessness-gateway-available-24_7 
+    Phone: 1800 003 308
+    Email: housingcustomers@sa.gov.au
+    Address: NA
+    ###########
+  - Organisation: Government of SA Housing Authority
+    Service: Housing Authority Homelessness Gateway
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: X
+    Keyterm: Homelessness
+    Website: https://www.housing.sa.gov.au/latest-news/homelessness-gateway-available-24_7 
+    Phone: 1800 003 308
+    Email: housingcustomers@sa.gov.au
+    Address: NA
+    ###########
+  - Organisation: SYC
+    Service: Trace-A-Place Youth Homlessness Service
+    Age: 18-25
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Homelessness
+    Website: https://www.syc.net.au/home/homelessness/trace-a-place/ 
+    Phone: NA
+    Email: NA
+    Address: 46 Carrington St, Adelaide SA 5000
+    ###########
+  - Organisation: Government of SA Housing Authority
+    Service: Homeless Connect SA 
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Homelessness
+    Website: https://www.housing.sa.gov.au/latest-news/homelessness-services-available-to-help-people-in-need
+    Phone: 1800 003 308
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Government of SA Housing Authority
+    Service: Homeless Connect SA 
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Homelessness
+    Website: https://www.housing.sa.gov.au/latest-news/homelessness-services-available-to-help-people-in-need
+    Phone: 1800 003 308
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Hutt St Centre
+    Service: Hutt St Centre 
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Homelessness
+    Website: https://www.housing.sa.gov.au/latest-news/homelessness-services-available-to-help-people-in-need
+    Phone: (08) 8418 2500
+    Email: help@huttstcentre.org.au
+    Address: 258 Hutt St, Adelaide SA 5000
+    ###########
+  - Organisation: Anglicare SA - The Magdalene Center
+    Service: Emergency Assistance Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Financial
+    Website: https://anglicaresa.com.au/support/emergency-assistance/the-magdalene-centre/
+    Phone: (08) 8305 9434 
+    Email: magdalenecentre@anglicaresa.com.au
+    Address: 82 Gilbert St, Adelaide, SA 5000
+    ###########
+  - Organisation: Anglicare SA - The Magdalene Center
+    Service: No Interest Loan Scheme (NILS)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Financial
+    Website: https://anglicaresa.com.au/support/emergency-assistance/the-magdalene-centre/
+    Phone: (08) 8305 9434 
+    Email: magdalenecentre@anglicaresa.com.au
+    Address: 82 Gilbert St, Adelaide, SA 5000
+    ###########
+  - Organisation: 1800RESPECT Phone Service
+    Service: Confidential information, counselling and support service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.1800respect.org.au/
+    Phone: NA
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: 1800RESPECT Phone Service
+    Service: Confidential information, counselling and support service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.1800respect.org.au/
+    Phone: NA
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: 1800RESPECT Phone Service
+    Service: Confidential information, counselling and support service
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.1800respect.org.au/
+    Phone: NA
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Womens Safety Services SA
+    Service: Safe accomodation and counselling
+    Age: X
+    Gender: F
+    Region: Metropolitan
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.womenssafetyservices.com.au/
+    Phone: 1800 800 098
+    Email: contact@womenssafetyservices.com.au
+    Address: NA
+    ###########
+  - Organisation: Womens Safety Services SA
+    Service: Safe accomodation and counselling
+    Age: X
+    Gender: F
+    Region: Regional
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.womenssafetyservices.com.au/
+    Phone: 1800 800 098
+    Email: contact@womenssafetyservices.com.au
+    Address: NA
+    ###########
+  - Organisation: Womens Safety Services SA
+    Service: Safe accomodation and counselling
+    Age: X
+    Gender: F
+    Region: Remote
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.womenssafetyservices.com.au/
+    Phone: 1800 800 098
+    Email: contact@womenssafetyservices.com.au
+    Address: NA
+    ###########
+  - Organisation: Womens and Childrens Health Network 
+    Service: Yarrow Place Rape and Sexual Assault Service
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.wchn.sa.gov.au/our-network/yarrow-place/yarrow-place-services
+    Phone: 1800 817 421 
+    Email: info@yarrowplace.sa.gov.au
+    Address: 64 Pennington Terrace, North Adelaide, South Australia 5006
+    ###########
+  - Organisation: Womens and Childrens Health Network 
+    Service: Yarrow Place Rape and Sexual Assault Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Mount Gambier
+    Keyterm: Family Violence
+    Website: https://www.wchn.sa.gov.au/our-network/yarrow-place/yarrow-place-services
+    Phone: 1800 817 421 
+    Email: info@yarrowplace.sa.gov.au
+    Address: NA
+    ###########
+  - Organisation: Womens and Childrens Health Network 
+    Service: Yarrow Place Rape and Sexual Assault Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Augusta
+    Keyterm: Family Violence
+    Website: https://www.wchn.sa.gov.au/our-network/yarrow-place/yarrow-place-services
+    Phone: 1800 817 421 
+    Email: info@yarrowplace.sa.gov.au
+    Address: NA
+    ###########
+  - Organisation: Womens and Childrens Health Network 
+    Service: Yarrow Place Rape and Sexual Assault Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Lincoln
+    Keyterm: Family Violence
+    Website: https://www.wchn.sa.gov.au/our-network/yarrow-place/yarrow-place-services
+    Phone: 1800 817 421 
+    Email: info@yarrowplace.sa.gov.au
+    Address: NA
+    ###########
+  - Organisation: Womens and Childrens Health Network 
+    Service: Yarrow Place Rape and Sexual Assault Service
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Iron Triangle
+    Keyterm: Family Violence
+    Website: https://www.wchn.sa.gov.au/our-network/yarrow-place/yarrow-place-services
+    Phone: 1800 817 421 
+    Email: info@yarrowplace.sa.gov.au
+    Address: NA
+    ###########
+  - Organisation: South Australian Police
+    Service: South Australia Domestic Violence Disclosure Scheme (DVDS)
+    Age: X
+    Gender: X
+    Region: Metropolitan
+    Location: NA
+    Keyterm: Family Violence
+    Website: https://www.police.sa.gov.au/your-safety/dvds
+    Phone: 1800 800 098
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: South Australian Police
+    Service: South Australia Domestic Violence Disclosure Scheme (DVDS)
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: NA
+    Keyterm: Family Violence
+    Website: https://www.police.sa.gov.au/your-safety/dvds
+    Phone: 1800 800 098
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: South Australian Police
+    Service: South Australia Domestic Violence Disclosure Scheme (DVDS)
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: NA
+    Keyterm: Family Violence
+    Website: https://www.police.sa.gov.au/your-safety/dvds
+    Phone: 1800 800 098
+    Email: NA
+    Address: NA
+    ###########
+  - Organisation: Uniting Country SA
+    Service: Domestic & Family Violence Support Services
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Augusta
+    Keyterm: Family Violence
+    Website: https://www.ucsa.org.au/domestic-family-violence
+    Phone: 1300 06 7777
+    Email: unitingcountry@ucsa.org.au
+    Address: 36 Stirling Road, Port Augusta SA 5700
+    ###########
+  - Organisation: Uniting Country SA
+    Service: Domestic & Family Violence Support Services
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Iron Triangle
+    Keyterm: Family Violence
+    Website: https://www.ucsa.org.au/domestic-family-violence
+    Phone: 1300 06 7777
+    Email: unitingcountry@ucsa.org.au
+    Address: 36 Stirling Road, Port Augusta SA 5700
+    ###########
+  - Organisation: Uniting Country SA
+    Service: Domestic & Family Violence Support Services
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Pirie
+    Keyterm: Family Violence
+    Website: https://www.ucsa.org.au/domestic-family-violence
+    Phone: 1300 06 7777
+    Email: unitingcountry@ucsa.org.au
+    Address: 60 Florence Street, Port Pirie SA 5540
+    ###########
+  - Organisation: Uniting Country SA
+    Service: Domestic & Family Violence Support Services
+    Age: X
+    Gender: X
+    Region: Remote
+    Location: Interstate
+    Keyterm: Family Violence
+    Website: https://www.ucsa.org.au/domestic-family-violence
+    Phone: 1300 06 7777
+    Email: unitingcountry@ucsa.org.au
+    Address: NA
+    ###########
+  - Organisation: Family Violence Legal Service Aboriginal Corporation (SA)
+    Service: Family Violence Legal Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Family Violence
+    Website: http://www.fvlsac.org.au/legal-services/
+    Phone: (08) 8625 3800
+    Email: NA
+    Address:  17 McKenzie Street, Ceduna SA 5700
+    ###########
+  - Organisation: Family Violence Legal Service Aboriginal Corporation (SA)
+    Service: Family Violence Legal Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Ceduna
+    Keyterm: Financial
+    Website: http://www.fvlsac.org.au/legal-services/
+    Phone: (08) 8625 3800
+    Email: NA
+    Address:  17 McKenzie Street, Ceduna SA 5700
+    ###########
+  - Organisation: Family Violence Legal Service Aboriginal Corporation (SA)
+    Service: Family Violence Legal Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Augusta
+    Keyterm: Family Violence
+    Website: http://www.fvlsac.org.au/legal-services/
+    Phone: (08) 8641 2195 
+    Email: NA
+    Address:  26 Jervois Street, Port Augusta SA 5700 
+    ###########
+  - Organisation: Family Violence Legal Service Aboriginal Corporation (SA)
+    Service: Family Violence Legal Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Augusta
+    Keyterm: Financial
+    Website: http://www.fvlsac.org.au/legal-services/
+    Phone: (08) 8641 2195 
+    Email: NA
+    Address:  26 Jervois Street, Port Augusta SA 5700 
+    ###########
+  - Organisation: Family Violence Legal Service Aboriginal Corporation (SA)
+    Service: Family Violence Legal Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Lincoln
+    Keyterm: Family Violence
+    Website: http://www.fvlsac.org.au/legal-services/
+    Phone: (08) 8683 1896 
+    Email: NA
+    Address:  89 Liverpool Street, Port Lincoln SA 5606
+    ###########
+  - Organisation: Family Violence Legal Service Aboriginal Corporation (SA)
+    Service: Family Violence Legal Service
+    Age: X
+    Gender: X
+    Region: Regional
+    Location: Port Lincoln
+    Keyterm: Financial
+    Website: http://www.fvlsac.org.au/legal-services/
+    Phone: (08) 8683 1896 
+    Email: NA
+    Address:  89 Liverpool Street, Port Lincoln SA 5606
+    ###########
+  - Organisation: Zahra Foundation
+    Service: Financial Counselling Services for women affect by domestic violence
+    Age: X
+    Gender: F
+    Region: Metropolitan
+    Location: X
+    Keyterm: Family Violence
+    Website: https://www.zahrafoundation.org.au/what-we-do/financial-counselling/
+    Phone: (08) 8352 1889 
+    Email: admin@zahrafoundation.org.au
+    Address:  NA
+    ###########
+  - Organisation: Zahra Foundation
+    Service: Financial Counselling Services for women affect by domestic violence
+    Age: X
+    Gender: F
+    Region: Metropolitan
+    Location: X
+    Keyterm: Financial
+    Website: https://www.zahrafoundation.org.au/what-we-do/financial-counselling/
+    Phone: (08) 8352 1889 
+    Email: admin@zahrafoundation.org.au
+    Address:  NA
+    ###########
