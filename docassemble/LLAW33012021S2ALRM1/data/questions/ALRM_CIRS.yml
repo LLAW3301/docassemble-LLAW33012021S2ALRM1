@@ -32,6 +32,11 @@ features:
 include:
   - ALRM_Services.yml
 ---
+  #  ALRM logo for output form
+  
+images:
+  alrm: ALRM_logo.png
+---
   #  Declaring dictionary lists for service sorting and variables to determine
   #  client region as well as generate final output.
   
@@ -55,12 +60,14 @@ attachment:
   - name: Recommended Services
     filename: recommended_services_list
     content: |
+      [FILE alrm, 30%]  
       **Served by**: ${ALRMempName}, ${ALRMempRole}   
       **Date**: ${current_datetime()}  
       ______________________________________________________________________  
       ${ALRMmdText}
 buttons:
   - Exit: exit
+    url: https://alrm.org.au/
 ---
   #  Determine what region the client is from based on their Location.
   #  Docassemble does not like trying to assign a value if the 
