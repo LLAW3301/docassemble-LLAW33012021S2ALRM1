@@ -75,7 +75,7 @@ code: |
   #  the client.
 
 code: |
-  ALRMlistServices = objects_from_file("ALRM_Services.yml", name='ALRMlistServices', use_objects=True)
+  ALRMlistServices = objects_from_file('ALRM_Services.yml', name='ALRMlistServices')
   #  Declare all dictionary lists required for filtering as empty.
   ALRMlistGenderSorted = []
   ALRMlistAgeSorted = []

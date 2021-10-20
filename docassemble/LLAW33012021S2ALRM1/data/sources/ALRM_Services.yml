@@ -33,8 +33,9 @@
 #    Address: 
 #    ###########
 
-object:
+object: DAList
 module: docassemble.base.util
+name: ALRMlistServices
 items:
   - Organisation: Aboriginal Sobriety Group
     Service: Lakalinjeri Tumbetin Waal (24/7 Live-In Rehabilitation Service)
