@@ -19,11 +19,12 @@ metadata:
       organization: Flinders University
     - name: Eliza Page
       organization: Flinders University
-  revision_date: 2021-10-22
+  revision_date: 2021-10-24
 ---
-  #  Disable debug elements.
+  #  Disable debug elements. Apply stylesheet.
   
 features:
+  css: ALRM_style.css
   debug: False
   hide standard menu: True
 ---
@@ -329,7 +330,7 @@ fields:
       - Personal Injruy: ALRMinjury
       - SACAT: ALRMsacat
 ---
-  #  Attributing work to Flinders and client.
+  #  Attributing work to Flinders and ALRM.
 
 default screen parts:
   post: |
