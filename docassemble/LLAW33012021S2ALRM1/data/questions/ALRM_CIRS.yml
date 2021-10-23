@@ -1,5 +1,5 @@
 ---
-  #  Miscellaneous information.
+  #  Miscellaneous app information.
   
 metadata:
   title: |
@@ -32,13 +32,14 @@ features:
 include:
   - ALRM_Services.yml
 ---
-  #  ALRM logo for output form
+  #  ALRM logo for output form.
   
 images:
   alrm: ALRM_logo.png
 ---
   #  Declaring dictionary lists for service sorting and variables to determine
   #  client region as well as generate final output.
+  #  Adding ALRM logo as object for header.
   
 use objects: True
 objects:  
@@ -50,6 +51,13 @@ objects:
   - ALRMlistDisplay: DAList
   - ALRMcliRegion:
   - ALRMmdText:
+  - ALRMlogo: DAStaticFile.using(filename='ALRM_logo.png')
+---
+  #  Inserting ALRM logo in application header.
+  
+mandatory: True
+code: |
+  set_parts(logo='<img src="' + ALRMlogo.url_for() + '" style="height: 50px;">')
 ---
   #  Final point in program flow. Docassemble handles all document generation,
   #  printing, emailing and downloading.
