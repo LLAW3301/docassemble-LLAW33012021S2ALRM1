@@ -24,9 +24,9 @@ metadata:
   #  Disable debug elements. Apply stylesheet.
   
 features:
-  css: ALRM_style.css
   debug: False
   hide standard menu: True
+  css: ALRM_style.css
 ---
   #  Include services list.
   
