@@ -50,8 +50,8 @@ objects:
   - ALRMlistLocateSorted: DAList
   - ALRMlistKeytermSorted: DAList
   - ALRMlistDisplay: DAList
-  - ALRMcliRegion:
-  - ALRMmdText:
+  - ALRMcliRegion: DAContext
+  - ALRMmdText: DAContext
   - ALRMlogo: DAStaticFile.using(filename='ALRM_logo.png')
 ---
   #  Inserting ALRM logo in application header.
@@ -242,6 +242,9 @@ code: |
   #  preview formatting.
 ---
   #  Gather serving employee details for display on form.
+  #  Action button serves as a stand-in for an exit button.
+  #  Docassemble does not allow mixing of fields and buttons
+  #  within a single question.
 
 question: Employee Details
 fields:
@@ -252,6 +255,10 @@ fields:
       - FSP
       - Solicitor
       - Law Clerk
+action buttons:
+  - label: Exit
+    action: https://alrm.org.au/
+    color: danger
 ---
   #  First set of captured client details. Concerned with
   #  age and gender.
