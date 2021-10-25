@@ -1,0 +1,13 @@
+.navbar{
+  /*
+    Change colour of header to the same black as the ALRM logo background.
+  */
+    background-color: rgb(32,32,32) !important;
+}
+
+.navbar .nav-item a{
+  /*
+    Change colour of header text to same yellow as ALRM logo text.
+  */
+    color: rgb(237,187,34) !important;
+}

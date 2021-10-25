@@ -1,0 +1,359 @@
+---
+  #  Miscellaneous app information.
+  
+metadata:
+  title: |
+    Civil Internal Referral System
+  short title: |
+    Civil Referral
+  description: |
+    Civil Services Referral Tool
+  authors:
+    - name: Amy Blight
+      organization: Flinders University
+    - name: Amani Obaida
+      organization: Flinders University
+    - name: Bradley Hawkes
+      organization: Flinders University
+    - name: Brayden Tansell
+      organization: Flinders University
+    - name: Eliza Page
+      organization: Flinders University
+  revision_date: 2021-10-24
+---
+  #  Disable debug elements. Apply stylesheet.
+  
+features:
+  debug: False
+  hide standard menu: True
+  css: ALRM_style.css
+---
+  #  Include services list.
+  
+include:
+  - ALRM_Services.yml
+---
+  #  ALRM logo for output form.
+  
+images:
+  alrm: ALRM_logo.png
+---
+  #  Declaring dictionary lists for service sorting and variables to determine
+  #  client region as well as generate final output.
+  #  Adding ALRM logo as object for header.
+  
+use objects: True
+objects:  
+  - ALRMlistGenderSorted: DAList
+  - ALRMlistAgeSorted: DAList
+  - ALRMlistRegionSorted: DAList
+  - ALRMlistLocateSorted: DAList
+  - ALRMlistKeytermSorted: DAList
+  - ALRMlistDisplay: DAList
+  - ALRMcliRegion: DAContext
+  - ALRMmdText: DAContext
+  - ALRMlogo: DAStaticFile.using(filename='ALRM_logo.png')
+---
+  #  Inserting ALRM logo in application header.
+  
+mandatory: True
+code: |
+  set_parts(logo='<img src="' + ALRMlogo.url_for() + '" style="height: 50px;">')
+---
+  #  Final point in program flow. Docassemble handles all document generation,
+  #  printing, emailing and downloading.
+  
+mandatory: True
+question: Your document is ready.
+attachment:
+  - name: Recommended Services
+    filename: recommended_services_list
+    content: |
+      [FILE alrm, 30%]  
+      **Served by**: ${ALRMempName}, ${ALRMempRole}   
+      **Date**: ${current_datetime()}  
+      ______________________________________________________________________  
+      ${ALRMmdText}
+buttons:
+  - Exit: exit
+    url: https://alrm.org.au/
+---
+  #  Determine what region the client is from based on their Location.
+  #  Docassemble does not like trying to assign a value if the 
+  #  relevant button has button fields within it.
+
+code: |
+  if ALRMcliLocate == 'Northern Suburbs' or ALRMcliLocate == 'Eastern Suburbs' or ALRMcliLocate == 'Southern Suburbs' or ALRMcliLocate == 'Western Suburbs':
+    ALRMcliRegion = 'Metropolitan'
+  elif ALRMcliLocate == 'Berri' or ALRMcliLocate == 'Ceduna' or ALRMcliLocate == 'Murray Bridge' or ALRMcliLocate == 'Mount Gambier' or ALRMcliLocate == 'Port Augusta' or ALRMcliLocate == 'Port Lincoln' or ALRMcliLocate == 'Port Pirie':
+    ALRMcliRegion = 'Regional'
+  else:
+    ALRMcliRegion = 'Remote'
+---
+  #  The service selection process for document generation and display.
+  #  Functions by filtering the serivces list against a given criteria
+  #  (e.g. only select services that have Gender Male or X) and inserting
+  #  them into a new list. This filtering is done based on:
+  #  Gender > Age > Region > Location > Keyterm
+  #  The final list is then populated only with the services that apply to
+  #  the client.
+
+code: |
+  #  Declare all dictionary lists required for filtering as empty.
+  ALRMlistGenderSorted = []
+  ALRMlistAgeSorted = []
+  ALRMlistRegionSorted = []
+  ALRMlistLocateSorted = []
+  ALRMlistKeytermSorted = []
+  ALRMlistDisplay = []
+  
+  #  Filter the main services list by client gender.
+  ALRMlistGenderSorted += [ALRMitem for ALRMitem in ALRMlistServices if ALRMitem['Gender'] == ALRMcliGender]
+  ALRMlistGenderSorted += [ALRMitem for ALRMitem in ALRMlistServices if ALRMitem['Gender'] == 'X']
+  
+  #  Filter the client gender list by client age range.
+  ALRMlistAgeSorted += [ALRMitem for ALRMitem in ALRMlistGenderSorted if ALRMitem['Age'] == ALRMcliAge]
+  ALRMlistAgeSorted += [ALRMitem for ALRMitem in ALRMlistGenderSorted if ALRMitem['Age'] == 'X']
+
+  #  Filter the client age range list by client region.
+  ALRMlistRegionSorted += [ALRMitem for ALRMitem in ALRMlistAgeSorted if ALRMitem['Region'] == ALRMcliRegion]
+
+  #  Filter the client region list by client location.
+  ALRMlistLocateSorted += [ALRMitem for ALRMitem in ALRMlistRegionSorted if ALRMitem['Location'] == ALRMcliLocate]
+  ALRMlistLocateSorted += [ALRMitem for ALRMitem in ALRMlistRegionSorted if ALRMitem['Location'] == 'X']
+  
+  #  Check if Family Violence checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMpisrChoices['ALRMfmlyViolent']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Family Violence']
+  
+  #  Check if Mental Health checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMpisrChoices['ALRMmentHealth']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Mental Health']
+
+  #  Check if Drug & Alcohol checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMpisrChoices['ALRMsubstance']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Drug & Alcohol']
+
+  #  Check if Homelessness checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMpisrChoices['ALRMhomeless']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Homelessness']
+
+  #  Check if Fiancial checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMpisrChoices['ALRMfinance']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Financial']
+
+  #  Check if Disability (Intellectual) checkbox was ticked
+  #  and then filterby that keyterm.
+  if ALRMpisrChoices['ALRMdisIntellect']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Disability (Intellectual)']
+
+  #  Check if Disability (Physical) checkbox was ticked
+  #  and then filterby that keyterm.
+  if ALRMpisrChoices['ALRMdisPhysical']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Disability (Physical)']
+
+  #  Check if Medical Health was ticked and then filter
+  #  by that keyterm.
+  if ALRMpisrChoices['ALRMmedical']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Medical Health']
+
+  #  Check if Family Law checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMliChoices['ALRMfmlyLaw']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Family Law']
+
+  #  Check if Child Protection checkbox was ticked and then 
+  #  filter by that keyterm.
+  if ALRMliChoices['ALRMchldProtect']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Child Protection']
+
+  #  Check if Personal Injury checkbox was ticked and then 
+  #  filter by that keyterm.
+  if ALRMliChoices['ALRMinjury']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'Personal Injury']
+
+  #  Check if SACAT checkbox was ticked and then filter
+  #  by that keyterm.
+  if ALRMliChoices['ALRMsacat']:
+    ALRMlistKeytermSorted += [ALRMitem for ALRMitem in ALRMlistLocateSorted if ALRMitem['Keyterm'] == 'SACAT']
+  
+  #  Copy our final filtered list into a new list to
+  #  build our document. Ticking 'None of the Above'
+  #  at both opportunities means nothing will display.
+  ALRMlistDisplay = [ALRMitem for ALRMitem in ALRMlistKeytermSorted]
+    
+  #  Initialise Markdown display string as empty.
+  ALRMmdText = ""
+  
+  #  Iterate over every entry in the display list and
+  #  build our document in markdown in a single string.
+  #  This method is repeatable until you reach the 
+  #  string length limit for Python. That is unlikely
+  #  to happen in this program (it would need to be
+  #  hundreds of gigabytes long).
+  for ALRMitem in ALRMlistDisplay:
+    ALRMmdText += "**Organisation**: "
+    ALRMmdText += str(ALRMitem['Organisation'])
+    ALRMmdText += "<br>"
+    ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+    ALRMmdText += "**Service**: "
+    ALRMmdText += str(ALRMitem['Service'])
+    ALRMmdText += "<br>"
+    ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+    ALRMmdText += "**Website**: "
+    ALRMmdText += str(ALRMitem['Website'])
+    ALRMmdText += "<br>"
+    ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+      
+  #  Trim away any NA fields, they are of no use to
+  #  clients.
+    if ALRMitem['Phone'] != 'NA':
+      ALRMmdText += "**Phone Number**: "
+      ALRMmdText += str(ALRMitem['Phone'])
+      ALRMmdText += "<br>"
+      ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+        
+    if ALRMitem['Email'] != 'NA':
+      ALRMmdText += "**Email Address**: "
+      ALRMmdText += str(ALRMitem['Email'])
+      ALRMmdText += "<br>"
+      ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+        
+    if ALRMitem['Address'] != 'NA':
+      ALRMmdText += "**Address**: "
+      ALRMmdText += str(ALRMitem['Address'])
+      ALRMmdText += "<br>"
+      ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+      
+  #  Print a line to seperate each recommended service.
+    ALRMmdText += "  ______________________________________________________________________   "
+    ALRMmdText += "<br>"
+    ALRMmdText += "&nbsp;&nbsp;&nbsp;&#013;&#013;"
+  
+  #  Markdown formatting is parsed differently when
+  #  inserted into the output pdf. This requires the
+  #  use of ASCII character codes to achieve the
+  #  intended result. It does slightly adjust the
+  #  preview formatting.
+---
+  #  Gather serving employee details for display on form.
+  #  Action button serves as a stand-in for an exit button.
+  #  Docassemble does not allow mixing of fields and buttons
+  #  within a single question.
+
+question: Employee Details
+fields:
+  - Employee Name: ALRMempName
+    default: Brayden Tansell
+  - Employee Role: ALRMempRole
+    datatype: radio
+    choices:
+      - Family Service Practitioner
+      - Solicitor
+      - Law Clerk
+    default: Solicitor
+action buttons:
+  - label: Exit
+    action: https://alrm.org.au/
+    color: danger
+---
+  #  First set of captured client details. Concerned with
+  #  age and gender.
+  
+question: Client Details
+fields:
+  - Client Age: ALRMcliAge
+    choices:
+      - 12-17
+      - 18-25
+      - 26-50
+      - 50+
+    default: 18-25
+  - Client Gender: ALRMcliGender
+    datatype: radio
+    choices:
+      - Male
+      - Female
+    default: Male
+---
+  #  Second set of captured client details. Clicking a
+  #  region button will progress through to a set of
+  #  location buttons. Client region is determined above
+  #  once location is stored.
+
+question: Client Region
+buttons:
+  - Metropolitan:
+      question: Client Location
+      field: ALRMcliLocate
+      buttons:
+        - Northern Suburbs
+        - Eastern Suburbs
+        - Southern Suburbs
+        - Western Suburbs
+  - Regional:
+      question: Client Location
+      field: ALRMcliLocate
+      buttons:
+        - Berri
+        - Ceduna
+        - Murray Bridge
+        - Mount Gambier
+        - Port Augusta
+        - Port Lincoln
+        - Port Pirie
+  - Remote:
+      question: Client Location
+      field: ALRMcliLocate
+      buttons:
+        - APY Lands
+        - Iron Triangle
+        - Interstate
+---
+  #  Capturing what areas the client requires services
+  #  be recommended for. Docassemble automatically provides
+  #  a "None of the Above" option which sets all choices
+  #  in a given field to False.
+
+question: Issues of Concern
+fields:
+  - 'Presenting Issues/Support Request': ALRMpisrChoices
+    datatype: checkboxes
+    choices:
+      - Family Violence: ALRMfmlyViolent
+      - Mental Health: ALRMmentHealth
+      - Drug & Alcohol: ALRMsubstance
+      - Homelessness: ALRMhomeless
+      - Financial: ALRMfinance
+      - Disability (Intellectual): ALRMdisIntellect
+      - Disability (Physical): ALRMdisPhysical
+      - Medical Health: ALRMmedical
+    default: ALRMfmlyViolent
+  - 'Legal Issues': ALRMliChoices
+    datatype: checkboxes
+    choices:
+      - Family Law: ALRMfmlyLaw
+      - Child Protection: ALRMchldProtect
+      - Personal Injruy: ALRMinjury
+      - SACAT: ALRMsacat
+    default: ALRMchldProtect
+---
+  #  Attributing work to Flinders and ALRM.
+
+default screen parts:
+  post: |
+    <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">
+    <div style="margin: 5px"><img src="https://staff.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png" height="40">
+    </div>
+    <div style="margin: 5px; text-align: right">
+    <cite><small><i>
+    Developed by Flinders University in collaboration with ALRM
+    </i></small></cite>
+    </div>
+    </div>
+---
