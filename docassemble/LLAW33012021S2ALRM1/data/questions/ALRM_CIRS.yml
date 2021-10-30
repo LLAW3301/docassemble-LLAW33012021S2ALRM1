@@ -68,6 +68,8 @@ question: Your document is ready.
 attachment:
   - name: Recommended Services
     filename: recommended_services_list
+    valid formats:
+      - pdf
     content: |
       [FILE alrm, 30%]  
       **Served by**: ${ALRMempName}, ${ALRMempRole}   
@@ -333,6 +335,7 @@ fields:
       - Disability (Intellectual): ALRMdisIntellect
       - Disability (Physical): ALRMdisPhysical
       - Medical Health: ALRMmedical
+    none of the above: False
     default: ALRMfmlyViolent
   - 'Legal Issues': ALRMliChoices
     datatype: checkboxes
@@ -341,6 +344,7 @@ fields:
       - Child Protection: ALRMchldProtect
       - Personal Injruy: ALRMinjury
       - SACAT: ALRMsacat
+    none of the above: False
     default: ALRMchldProtect
 ---
   #  Attributing work to Flinders and ALRM.
