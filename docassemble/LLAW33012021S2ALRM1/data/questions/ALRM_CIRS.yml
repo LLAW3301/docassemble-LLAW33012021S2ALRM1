@@ -335,7 +335,6 @@ fields:
       - Disability (Intellectual): ALRMdisIntellect
       - Disability (Physical): ALRMdisPhysical
       - Medical Health: ALRMmedical
-    none of the above: False
     default: ALRMfmlyViolent
   - 'Legal Issues': ALRMliChoices
     datatype: checkboxes
@@ -344,7 +343,6 @@ fields:
       - Child Protection: ALRMchldProtect
       - Personal Injruy: ALRMinjury
       - SACAT: ALRMsacat
-    none of the above: False
     default: ALRMchldProtect
 ---
   #  Attributing work to Flinders and ALRM.
