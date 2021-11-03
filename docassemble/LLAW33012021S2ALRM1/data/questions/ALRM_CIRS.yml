@@ -19,7 +19,7 @@ metadata:
       organization: Flinders University
     - name: Eliza Page
       organization: Flinders University
-  revision_date: 2021-10-24
+  revision_date: 2021-11-03
 ---
   #  Disable debug elements. Apply stylesheet.
   
@@ -335,7 +335,6 @@ fields:
       - Disability (Intellectual): ALRMdisIntellect
       - Disability (Physical): ALRMdisPhysical
       - Medical Health: ALRMmedical
-    none of the above: False
     default: ALRMfmlyViolent
   - 'Legal Issues': ALRMliChoices
     datatype: checkboxes
@@ -344,7 +343,6 @@ fields:
       - Child Protection: ALRMchldProtect
       - Personal Injruy: ALRMinjury
       - SACAT: ALRMsacat
-    none of the above: False
     default: ALRMchldProtect
 ---
   #  Attributing work to Flinders and ALRM.
