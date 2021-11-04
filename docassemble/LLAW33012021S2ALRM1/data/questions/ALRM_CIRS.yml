@@ -19,7 +19,7 @@ metadata:
       organization: Flinders University
     - name: Eliza Page
       organization: Flinders University
-  revision_date: 2021-11-03
+  revision_date: 2021-11-04
 ---
   #  Disable debug elements. Apply stylesheet.
   
@@ -251,14 +251,12 @@ code: |
 question: Employee Details
 fields:
   - Employee Name: ALRMempName
-    default: Brayden Tansell
   - Employee Role: ALRMempRole
     datatype: radio
     choices:
       - Family Service Practitioner
       - Solicitor
       - Law Clerk
-    default: Solicitor
 action buttons:
   - label: Exit
     action: https://alrm.org.au/
@@ -275,13 +273,11 @@ fields:
       - 18-25
       - 26-50
       - 50+
-    default: 18-25
   - Client Gender: ALRMcliGender
     datatype: radio
     choices:
       - Male
       - Female
-    default: Male
 ---
   #  Second set of captured client details. Clicking a
   #  region button will progress through to a set of
@@ -335,7 +331,6 @@ fields:
       - Disability (Intellectual): ALRMdisIntellect
       - Disability (Physical): ALRMdisPhysical
       - Medical Health: ALRMmedical
-    default: ALRMfmlyViolent
   - 'Legal Issues': ALRMliChoices
     datatype: checkboxes
     choices:
@@ -343,7 +338,6 @@ fields:
       - Child Protection: ALRMchldProtect
       - Personal Injruy: ALRMinjury
       - SACAT: ALRMsacat
-    default: ALRMchldProtect
 ---
   #  Attributing work to Flinders and ALRM.
 
